@@ -1,0 +1,15 @@
+{
+  "name": "bokrah-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check": "node scripts/generate.mjs --check && node --test tests/*.test.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build-showcase.mjs"
+  },
+  "workspaces": [
+    "packages/web"
+  ]
+}

@@ -1,0 +1,59 @@
+name: Validate and publish catalogues
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: design-system-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: npm run check
+      - run: npm run build
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.0'
+          channel: stable
+          cache: true
+      - name: Validate Flutter package
+        working-directory: packages/flutter
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+      - name: Validate Flutter catalogue
+        working-directory: examples/flutter
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+          flutter build web --release --base-href /bokrah-design-system/flutter/
+      - name: Include Flutter preview
+        run: cp -r examples/flutter/build/web build/site/flutter
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request'
+        with:
+          path: build/site
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate-build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      actions: read
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

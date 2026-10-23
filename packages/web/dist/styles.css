@@ -1,0 +1,57 @@
+@import './tokens.css';
+@font-face{font-family:'Bokrah Sans';src:url('./fonts/DMSans.ttf') format('truetype');font-weight:100 1000;font-display:swap}
+@font-face{font-family:'Bokrah Heading';src:url('./fonts/Manrope.ttf') format('truetype');font-weight:200 800;font-display:swap}
+@font-face{font-family:'Bokrah Arabic';src:url('./fonts/NotoSansArabic.ttf') format('truetype');font-weight:100 900;font-display:swap}
+.bk-root{background:var(--bk-background);color:var(--bk-text);font:400 var(--bk-font-size-body)/1.6 'Bokrah Sans',sans-serif;color-scheme:light}
+[data-bk-theme=dark] .bk-root,.bk-root[data-bk-theme=dark]{color-scheme:dark}
+.bk-root:lang(ar),.bk-root :lang(ar){font-family:'Bokrah Arabic',sans-serif}
+.bk-root *,.bk-root *:before,.bk-root *:after{box-sizing:border-box}
+.bk-root h1,.bk-root h2,.bk-root h3{font-family:'Bokrah Heading','Bokrah Arabic',sans-serif;line-height:1.3;letter-spacing:-.03em;margin-block:0 var(--bk-space-lg)}
+.bk-root:lang(ar) :is(h1,h2,h3){font-family:'Bokrah Arabic',sans-serif;line-height:1.6;letter-spacing:0}
+.bk-root p{margin-block:0 var(--bk-space-lg)}
+.bk-root a{color:var(--bk-primary)}
+.bk-muted{color:var(--bk-muted)}
+.bk-button{line-height:1.5;font-family:inherit;font-size:var(--bk-font-size-small);display:inline-flex;align-items:center;justify-content:center;gap:var(--bk-space-sm);min-block-size:var(--bk-layout-control-height);padding:var(--bk-space-md) var(--bk-space-xl);border:1px solid var(--bk-primary);border-radius:var(--bk-radius-md);background:var(--bk-primary);color:var(--bk-on-primary);text-decoration:none;cursor:pointer;transition:background var(--bk-motion-fast),box-shadow var(--bk-motion-fast);font-weight:600}
+.bk-root a.bk-button{color:var(--bk-on-primary)}
+.bk-button:not(.bk-button--secondary):not(.bk-button--danger):hover:not(:disabled):not([aria-disabled=true]){background:var(--bk-primary-hover)}
+.bk-button--secondary{background:var(--bk-surface);border-color:var(--bk-control-border);color:var(--bk-text)}
+.bk-root a.bk-button--secondary{color:var(--bk-text)}
+.bk-button--secondary:hover:not(:disabled){background:var(--bk-surface-alt)}
+.bk-button--danger{background:var(--bk-danger);border-color:var(--bk-danger);color:var(--bk-on-danger)}
+.bk-button--danger:hover:not(:disabled){background:var(--bk-danger);filter:brightness(.92)}
+.bk-button:disabled,.bk-button[aria-disabled=true]{opacity:.5;cursor:not-allowed}
+.bk-root :is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid var(--bk-focus);outline-offset:3px}
+.bk-card{padding:var(--bk-space-xl);border:1px solid var(--bk-border);border-radius:var(--bk-radius-lg);background:var(--bk-surface);min-inline-size:0}
+.bk-card--tinted{background:var(--bk-surface-alt)}
+.bk-field{display:flex;flex-direction:column;gap:var(--bk-space-sm);font-size:var(--bk-font-size-small);font-weight:600}
+.bk-input{font:inherit;color:var(--bk-text);background:var(--bk-surface);border:1px solid var(--bk-control-border);border-radius:var(--bk-radius-md);padding:var(--bk-space-md) var(--bk-space-lg);min-block-size:var(--bk-layout-control-height);inline-size:100%;min-inline-size:0}
+.bk-input::placeholder{color:var(--bk-muted);opacity:1}
+.bk-input[aria-invalid=true]{border-color:var(--bk-danger)}
+.bk-helper{font-size:var(--bk-font-size-caption);font-weight:400;color:var(--bk-muted)}
+.bk-error{color:var(--bk-danger)}
+.bk-badge{display:inline-flex;align-items:center;gap:var(--bk-space-xs);font-size:var(--bk-font-size-caption);font-weight:600;line-height:1.6;padding:var(--bk-space-xs) var(--bk-space-md);border-radius:var(--bk-radius-pill);background:var(--bk-surface-alt);color:var(--bk-text)}
+.bk-tone-success{--tone-bg:var(--bk-success-surface);--tone-fg:var(--bk-success)}
+.bk-tone-warning{--tone-bg:var(--bk-warning-surface);--tone-fg:var(--bk-warning)}
+.bk-tone-danger{--tone-bg:var(--bk-danger-surface);--tone-fg:var(--bk-danger)}
+.bk-tone-info{--tone-bg:var(--bk-info-surface);--tone-fg:var(--bk-info)}
+.bk-badge[class*=bk-tone],.bk-alert[class*=bk-tone]{background:var(--tone-bg);color:var(--tone-fg)}
+.bk-alert{display:flex;align-items:flex-start;gap:var(--bk-space-md);padding:var(--bk-space-lg);border-radius:var(--bk-radius-md);font-size:var(--bk-font-size-small);background:var(--bk-surface-alt);color:var(--bk-text)}
+.bk-alert strong{display:block;margin-block-end:var(--bk-space-xs)}
+.bk-stat{display:flex;flex-direction:column;gap:var(--bk-space-sm)}
+.bk-stat__label{font-size:var(--bk-font-size-small);color:var(--bk-muted)}
+.bk-stat__value{font-family:'Bokrah Heading',sans-serif;font-size:var(--bk-font-size-heading);font-weight:800;line-height:1.3;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.bk-stat__detail{font-size:var(--bk-font-size-caption);color:var(--bk-muted)}
+.bk-empty{text-align:center;padding:var(--bk-space-xxl);color:var(--bk-muted)}
+.bk-empty h3{color:var(--bk-text)}
+.bk-table-wrap{overflow-x:auto;border:1px solid var(--bk-border);border-radius:var(--bk-radius-lg)}
+.bk-table{inline-size:100%;border-collapse:collapse;text-align:start;background:var(--bk-surface);font-size:var(--bk-font-size-small)}
+.bk-table th{background:var(--bk-surface-alt);font-weight:600;text-align:start}
+.bk-table :is(th,td){padding:var(--bk-space-lg);border-block-end:1px solid var(--bk-border)}
+.bk-table tr:last-child td{border:0}.bk-table caption{text-align:start;padding:var(--bk-space-lg);font-weight:600}
+.bk-dialog{color:var(--bk-text);background:var(--bk-surface);padding:var(--bk-space-xl);border:1px solid var(--bk-border);border-radius:var(--bk-radius-lg);inline-size:min(480px,calc(100% - 32px));max-block-size:85dvh;overflow:auto}
+.bk-dialog::backdrop{background:#13251d88}
+.bk-stack{display:flex;flex-direction:column;gap:var(--bk-space-lg)}
+.bk-row{display:flex;flex-wrap:wrap;align-items:center;gap:var(--bk-space-md)}
+.bk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:var(--bk-space-lg)}
+.bk-sr-only{position:absolute;inline-size:1px;block-size:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(prefers-reduced-motion:reduce){.bk-root *{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

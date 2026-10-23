@@ -1,0 +1,18 @@
+name: bokrah_catalog
+description: Interactive Bokrah design system catalogue.
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  bokrah_design_system:
+    path: ../../packages/flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

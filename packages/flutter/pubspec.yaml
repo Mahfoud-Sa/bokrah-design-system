@@ -1,0 +1,25 @@
+name: bokrah_design_system
+description: Bokrah design tokens, Material themes, and reusable Arabic and English UI components.
+version: 0.1.0
+publish_to: none
+repository: https://github.com/Mahfoud-Sa/bokrah-design-system
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+  flutter: '>=3.32.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  fonts:
+    - family: Bokrah Sans
+      fonts:
+        - asset: assets/fonts/DMSans.ttf
+    - family: Bokrah Heading
+      fonts:
+        - asset: assets/fonts/Manrope.ttf
+    - family: Bokrah Arabic
+      fonts:
+        - asset: assets/fonts/NotoSansArabic.ttf
