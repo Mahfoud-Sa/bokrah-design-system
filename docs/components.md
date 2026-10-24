@@ -2,6 +2,8 @@
 
 [2. UI Components — Buttons & Actions / Feedback & Status](ui-components.md)
 
+[3. Navigation Components: all eleven patterns](navigation.md)
+
 ## Flutter
 
 ```dart

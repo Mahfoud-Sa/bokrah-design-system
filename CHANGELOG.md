@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0
+
+- Add eleven navigation patterns to Flutter and web, with Arabic/English examples and all three themes.
+- Add controlled destination navigation, native drawers/tabs/steppers, breadcrumbs, bounded pagination and explicit back actions.
+- Add reusable web tab/menu keyboard helpers, contextual actions and listener cleanup.
+- Document state ownership, routing boundaries, focus behavior and accessible interaction contracts.
+
 ## 0.3.0
 
 - Add UI component groups: Buttons & Actions and Feedback & Status.

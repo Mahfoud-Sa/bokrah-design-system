@@ -19,3 +19,5 @@ export function setBokrahTheme(theme:'light'|'dark'|'high-contrast',root?:Pick<H
 export function setBokrahLanguage(language:'en'|'ar',root?:Pick<HTMLElement,'lang'|'dir'>):void;
 export const foundations:ReadonlyArray<{id:string;en:string;ar:string;itemsEn:string[];itemsAr:string[];groups:string[];values:Record<string,unknown>}>;
 export const icons:Record<string,Array<Array<[string,...number[]]>>>;
+export function bindBokrahTabs(root:HTMLElement,options?:{onChange?:(index:number)=>void}):()=>void;
+export function bindBokrahMenu(trigger:HTMLElement,menu:HTMLElement,options?:{onSelect?:(value:string,item:HTMLElement)=>void}):{open():void;openAt(x:number,y:number,returnFocus?:HTMLElement):void;close(restoreFocus?:boolean):void;destroy():void};

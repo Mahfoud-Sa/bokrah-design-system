@@ -8,6 +8,8 @@ Shared visual language for Bokrah, based on the [Bokrah website](https://mahfoud
 
 [2. UI Components: Buttons & Actions, Feedback & Status](docs/ui-components.md)
 
+[3. Navigation Components: all eleven patterns](docs/navigation.md)
+
 ## Contents
 
 - [Repository](#repository)
