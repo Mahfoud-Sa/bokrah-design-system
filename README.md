@@ -79,3 +79,5 @@ Read [the design guide](docs/design-system.md) and [the component usage guide](d
 [6. Component States: definitions, examples and applicability](docs/component-states.md)
 
 [7. Design Patterns: all nine experience recipes](docs/design-patterns.md)
+
+[8. Documentation requirements](docs/documentation-requirements.md) · [All component references](docs/component-reference.md)

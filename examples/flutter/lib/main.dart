@@ -72,8 +72,8 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
                 const SizedBox(height: BkSpace.lg),
                 Text(
                   text(
-                    'Bokrah design system · Flutter catalogue · v0.8.0',
-                    'نظام تصميم بكرة · مكتبة فلاتر · 0.8.0',
+                    'Bokrah design system · Flutter catalogue · v0.9.0',
+                    'نظام تصميم بكرة · مكتبة فلاتر · 0.9.0',
                   ),
                 ),
                 const SizedBox(height: BkSpace.xxl),

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0
+
+- Document every public component against the ten required sections in English and Arabic.
+- Add 49 searchable web references and individual Markdown pages with source-derived Flutter APIs, related types, web bindings and implementation examples.
+- Compile-check Flutter snippets and enforce documentation coverage/drift through CI.
+- Publish the documentation standard and maintenance workflow.
+
 ## 0.8.0
 
 - Add nine bilingual design-pattern recipes covering authentication, CRUD, search/filtering, multi-step forms, lists, dashboards, notifications, errors and permissions.
