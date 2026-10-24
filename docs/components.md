@@ -4,6 +4,8 @@
 
 [3. Navigation Components: all eleven patterns](navigation.md)
 
+[4. Data Display Components: all ten groups](data-display.md)
+
 ## Flutter
 
 ```dart

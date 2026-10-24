@@ -10,6 +10,8 @@ Shared visual language for Bokrah, based on the [Bokrah website](https://mahfoud
 
 [3. Navigation Components: all eleven patterns](docs/navigation.md)
 
+[4. Data Display Components: all ten groups](docs/data-display.md)
+
 ## Contents
 
 - [Repository](#repository)

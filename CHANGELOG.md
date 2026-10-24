@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0
+
+- Add ten data-display groups with bilingual web and Flutter examples.
+- Add controlled tables/grids, list tiles, avatar/image fallback, tags, tooltips/popovers, expansion panels, timelines, bar charts, KPI cards and no-results actions.
+- Add searchable and numerically sorted sample data, accessible chart values, anchored popover focus behavior and local illustration assets.
+- Test sort behavior, tag/reset actions, expansion, image failure, zero-value charts and popover dismissal.
+
 ## 0.4.0
 
 - Add eleven navigation patterns to Flutter and web, with Arabic/English examples and all three themes.

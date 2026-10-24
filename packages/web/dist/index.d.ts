@@ -21,3 +21,5 @@ export const foundations:ReadonlyArray<{id:string;en:string;ar:string;itemsEn:st
 export const icons:Record<string,Array<Array<[string,...number[]]>>>;
 export function bindBokrahTabs(root:HTMLElement,options?:{onChange?:(index:number)=>void}):()=>void;
 export function bindBokrahMenu(trigger:HTMLElement,menu:HTMLElement,options?:{onSelect?:(value:string,item:HTMLElement)=>void}):{open():void;openAt(x:number,y:number,returnFocus?:HTMLElement):void;close(restoreFocus?:boolean):void;destroy():void};
+export function bindBokrahTooltip(trigger:HTMLElement,tooltip:HTMLElement):()=>void;
+export function bindBokrahPopover(trigger:HTMLElement,popover:HTMLElement):{open():void;close(restoreFocus?:boolean):void;destroy():void};
