@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0
+
+- Add nine bilingual design-pattern recipes covering authentication, CRUD, search/filtering, multi-step forms, lists, dashboards, notifications, errors and permissions.
+- Provide interactive local-only web flows and independent Flutter demo routes with existing design-system components.
+- Add recipe model and flow regression tests; document service boundaries, recovery, accessibility and acceptance criteria.
+
 ## 0.7.0
 
 - Define all ten component states with bilingual web and Flutter examples and a component applicability matrix.

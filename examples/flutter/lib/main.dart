@@ -1,3 +1,4 @@
+import 'patterns.dart';
 import 'states.dart';
 import 'layout.dart';
 import 'data_display.dart';
@@ -71,8 +72,8 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
                 const SizedBox(height: BkSpace.lg),
                 Text(
                   text(
-                    'Bokrah design system · Flutter catalogue · v0.7.0',
-                    'نظام تصميم بكرة · مكتبة فلاتر · 0.7.0',
+                    'Bokrah design system · Flutter catalogue · v0.8.0',
+                    'نظام تصميم بكرة · مكتبة فلاتر · 0.8.0',
                   ),
                 ),
                 const SizedBox(height: BkSpace.xxl),
@@ -81,6 +82,7 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
                 DataDisplayCatalogue(arabic: arabic),
                 LayoutCatalogue(arabic: arabic),
                 StatesCatalogue(arabic: arabic),
+                PatternsCatalogue(arabic: arabic),
                 FoundationCatalogue(arabic: arabic),
                 const SizedBox(height: BkSpace.xxl),
                 Wrap(

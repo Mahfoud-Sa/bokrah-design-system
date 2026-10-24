@@ -48,3 +48,5 @@ The CSS package includes type declarations for the optional JS helpers and keeps
 [5. Layout Components: all ten groups](layout.md)
 
 [6. Component States: definitions, examples and applicability](component-states.md)
+
+[7. Design Patterns: all nine experience recipes](design-patterns.md)

@@ -77,3 +77,5 @@ Read [the design guide](docs/design-system.md) and [the component usage guide](d
 [Layout components: web and Flutter](docs/layout.md)
 
 [6. Component States: definitions, examples and applicability](docs/component-states.md)
+
+[7. Design Patterns: all nine experience recipes](docs/design-patterns.md)
