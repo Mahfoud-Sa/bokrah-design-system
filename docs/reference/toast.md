@@ -76,7 +76,7 @@ No dedicated JavaScript binding is exported for this component. Use native seman
 
 ## 5. States and interactions / الحالات والتفاعلات
 
-show hides the previous Flutter SnackBar, then returns ScaffoldFeatureController<SnackBar, SnackBarClosedReason>. Visible/dismissed states are native. Web consumers implement close/timing; no bindBokrahToast API exists.
+show hides the previous Flutter SnackBar, then returns ScaffoldFeatureController&lt;SnackBar, SnackBarClosedReason&gt;. Visible/dismissed states are native. Web consumers implement close/timing; no bindBokrahToast API exists.
 
 تخفي show الرسالة السابقة ثم تعيد ScaffoldFeatureController. حالات الإظهار والإغلاق أصلية. ينفذ مستهلك الويب الإغلاق والتوقيت؛ لا توجد bindBokrahToast.
 

@@ -36,7 +36,7 @@ Use for activity/history already ordered by the application.
 
 ## 3. Variants and sizes / الأنواع والأحجام
 
-List<BkTimelineEntry>; no sorting, grouping, size or interactive event API.
+List&lt;BkTimelineEntry&gt;; no sorting, grouping, size or interactive event API.
 
 قائمة BkTimelineEntry دون ترتيب أو تجميع أو حجم أو تفاعل أحداث مدمج.
 

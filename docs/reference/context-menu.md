@@ -36,9 +36,9 @@ Use for commands scoped to a target, always retaining keyboard/touch access.
 
 ## 3. Variants and sizes / الأنواع والأحجام
 
-Typed BkMenuAction<T> entries; no size or whole-trigger enabled parameter in the Flutter wrapper.
+Typed BkMenuAction&lt;T&gt; entries; no size or whole-trigger enabled parameter in the Flutter wrapper.
 
-عناصر BkMenuAction<T> محددة النوع؛ لا حجم أو معامل تعطيل زر الفتح في غلاف فلاتر.
+عناصر BkMenuAction&lt;T&gt; محددة النوع؛ لا حجم أو معامل تعطيل زر الفتح في غلاف فلاتر.
 
 <a id="4-api"></a>
 

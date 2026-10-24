@@ -71,9 +71,9 @@ export declare function bindBokrahModal(trigger: HTMLElement, dialog: HTMLDialog
 
 ## 5. States and interactions / الحالات والتفاعلات
 
-Returns Future<T?>; cancellation/close returns null unless application code pops a result. Native modal routes contain focus and handle back/Escape. Web showModal makes the rest of the page inert; the binding restores a connected trigger on close. Web trigger disabled/aria-disabled blocks opening.
+Returns Future&lt;T?&gt;; cancellation/close returns null unless application code pops a result. Native modal routes contain focus and handle back/Escape. Web showModal makes the rest of the page inert; the binding restores a connected trigger on close. Web trigger disabled/aria-disabled blocks opening.
 
-تعيد Future<T?> ويعيد الإلغاء null ما لم يرجع التطبيق نتيجة. تحصر المسارات الأصلية التركيز وتدعم الرجوع وEscape. تعطل showModal خلفية الويب ويعيد الربط التركيز إلى زر متصل بعد الإغلاق ويمنع فتح الزر المعطل.
+تعيد Future&lt;T?&gt; ويعيد الإلغاء null ما لم يرجع التطبيق نتيجة. تحصر المسارات الأصلية التركيز وتدعم الرجوع وEscape. تعطل showModal خلفية الويب ويعيد الربط التركيز إلى زر متصل بعد الإغلاق ويمنع فتح الزر المعطل.
 
 <a id="6-accessibility"></a>
 
