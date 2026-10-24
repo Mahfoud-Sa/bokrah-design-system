@@ -43,9 +43,23 @@ jobs:
         if: github.event_name != 'pull_request'
         with:
           path: build/site
+  golden-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.0'
+          channel: stable
+          cache: true
+      - name: Verify accounting visual baselines
+        working-directory: examples/flutter
+        run: |
+          flutter pub get
+          flutter test test/accounting_test.dart --plain-name golden
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: validate-build
+    needs: [validate-build, golden-windows]
     runs-on: ubuntu-latest
     permissions:
       pages: write

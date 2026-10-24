@@ -12,6 +12,8 @@ Shared visual language for Bokrah, based on the [Bokrah website](https://mahfoud
 
 [4. Data Display Components: all ten groups](docs/data-display.md)
 
+[Interactive accounting layout playground: eight templates, configuration and inspector](docs/accounting-playground.md) · [Open playground](https://mahfoud-sa.github.io/bokrah-design-system/flutter/#/playground)
+
 ## Contents
 
 - [Repository](#repository)

@@ -1,4 +1,5 @@
 import 'patterns.dart';
+import 'accounting/accounting_playground_page.dart';
 import 'states.dart';
 import 'layout.dart';
 import 'data_display.dart';
@@ -24,6 +25,7 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
   @override
   Widget build(BuildContext context) => MaterialApp(
     title: 'Bokrah Design System',
+    routes: {'/playground': (context) => const AccountingPlaygroundPage()},
     debugShowCheckedModeBanner: false,
     locale: Locale(arabic ? 'ar' : 'en'),
     supportedLocales: const [Locale('en'), Locale('ar')],
@@ -40,6 +42,11 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
         appBar: AppBar(
           title: const Text('Bokrah'),
           actions: [
+            IconButton(
+              tooltip: text('Accounting playground', 'مختبر المحاسبة'),
+              onPressed: () => Navigator.of(context).pushNamed('/playground'),
+              icon: const Icon(Icons.dashboard_customize_outlined),
+            ),
             TextButton(
               onPressed: () => setState(() => arabic = !arabic),
               child: Text(arabic ? 'English' : 'العربية'),

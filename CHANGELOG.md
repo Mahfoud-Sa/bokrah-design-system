@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — accounting playground
+
+- Add an interactive Flutter accounting layout playground to the existing example catalogue, with a standalone entry point and `/playground` route.
+- Include eight templates, adaptive shell/navigation, simulated device dimensions, themes, density, English/Arabic, data states and an API/code inspector.
+- Add exact minor-unit financial calculations, deterministic mock data, journal validation/drafts/posting, transaction filters/approval/export, invoices and reconciled reports.
+- Verify generated usage examples, responsive behavior and financial invariants; add five Windows golden baselines and a dedicated CI job.
+
 ## 0.10.0
 
 - Adopt user-provided Somar Sans for English and Arabic body text, headings and controls in web and Flutter.
