@@ -1,0 +1,117 @@
+{
+  "family": "Somar Sans",
+  "source": "User-provided somar-sans.zip",
+  "author": "Baianat",
+  "authorUrl": "https://www.baianat.com/",
+  "projectUrl": "https://www.behance.net/gallery/113169369/Somar-Sans-Typeface",
+  "fonts": [
+    {
+      "file": "SomarSans-Thin.otf",
+      "weight": 100,
+      "style": "normal",
+      "sha256": "d47fda38b49961844469dbaac2e9f3dbad0f3d9979aff6b0cf4cf5c88d3d0321"
+    },
+    {
+      "file": "SomarSans-ThinItalic.otf",
+      "weight": 100,
+      "style": "italic",
+      "sha256": "67ce4d93c3db06a88a9b5d0b3c69e90eb5c48aba6c41105b16ac421808ff5835"
+    },
+    {
+      "file": "SomarSans-ExtraLight.otf",
+      "weight": 200,
+      "style": "normal",
+      "sha256": "c779d8c195586b3b6afb6a7366d9415951e038a8d5eddacb37aeeaf18862c484"
+    },
+    {
+      "file": "SomarSans-ExtraLightItalic.otf",
+      "weight": 200,
+      "style": "italic",
+      "sha256": "e21a034fee09303b9c1fec951bed3854634d584427c4f73ae5f99002e91e4683"
+    },
+    {
+      "file": "SomarSans-Light.otf",
+      "weight": 300,
+      "style": "normal",
+      "sha256": "e81b60fc13dd379e086e96d18a96072918c2413fe5bb347af574ded0a8a1f5e2"
+    },
+    {
+      "file": "SomarSans-LightItalic.otf",
+      "weight": 300,
+      "style": "italic",
+      "sha256": "0bd0a07e4b3ccfb74d38128ddfa398c9a5bc6f3c950021863b117751527adff5"
+    },
+    {
+      "file": "SomarSans-Regular.otf",
+      "weight": 400,
+      "style": "normal",
+      "sha256": "ac355205b9cce0c34fea32bd30871647a5bd7f1241ace774458628f95521142e"
+    },
+    {
+      "file": "SomarSans-RegularItalic.otf",
+      "weight": 400,
+      "style": "italic",
+      "sha256": "42c7b0da5b7a2656b0a212a76cde9d7e892dfa572ed842018ed7ca22669eb844"
+    },
+    {
+      "file": "SomarSans-Medium.otf",
+      "weight": 500,
+      "style": "normal",
+      "sha256": "5a189f9f0bfa7ad9cd30b208b2471b6f59606b29d1428e42f7bdbd2f72d98717"
+    },
+    {
+      "file": "SomarSans-MediumItalic.otf",
+      "weight": 500,
+      "style": "italic",
+      "sha256": "c896e38cd21a7ed5801953b1750f257693b7e783c7f12841605a7d7079e6f0f3"
+    },
+    {
+      "file": "SomarSans-SemiBold.otf",
+      "weight": 600,
+      "style": "normal",
+      "sha256": "99825ba44306034fc80c5039cbcab11f6f4916e1eb75731e7ce653df21a4108d"
+    },
+    {
+      "file": "SomarSans-SemiBoldItalic.otf",
+      "weight": 600,
+      "style": "italic",
+      "sha256": "9186e8b596bce15eb3a6ddd38755763e81c35767a2d2b5cd4ff23725c184c0cb"
+    },
+    {
+      "file": "SomarSans-Bold.otf",
+      "weight": 700,
+      "style": "normal",
+      "sha256": "7a35ead2497f13a31c6320f3815ac225c1219988111938f10f524678362b2be6"
+    },
+    {
+      "file": "SomarSans-BoldItalic.otf",
+      "weight": 700,
+      "style": "italic",
+      "sha256": "fe3a6ad9660584c5202b6153fae380ba0f1e82524e832e4d0ec9de8358f79ac0"
+    },
+    {
+      "file": "SomarSans-ExtraBold.otf",
+      "weight": 800,
+      "style": "normal",
+      "sha256": "9f0c914a1d6789ff07285249b929de9fffa5a0631c6fd4684aa6b367f1293f0f"
+    },
+    {
+      "file": "SomarSans-ExtraBoldItalic.otf",
+      "weight": 800,
+      "style": "italic",
+      "sha256": "688570dc969cb0f974e090ba002a72a50efbf36bc71cb86f7076816cf4eb781c"
+    },
+    {
+      "file": "SomarSans-Black.otf",
+      "weight": 900,
+      "style": "normal",
+      "sha256": "0e0deddd5eb3ca5106f5b0321c8affd4b3f8a971c0e7bb5bf0c4c15e6c317bf5"
+    },
+    {
+      "file": "SomarSans-BlackItalic.otf",
+      "weight": 900,
+      "style": "italic",
+      "sha256": "a230179570161995ed290db990f694662bed4b879be41c5a804a7a07c069eb8b"
+    }
+  ]
+}

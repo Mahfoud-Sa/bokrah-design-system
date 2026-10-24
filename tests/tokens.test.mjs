@@ -30,7 +30,7 @@ test('theme helper validates before changing the supplied root',()=>{
  setBokrahTheme('dark',root);
  assert.throws(()=>setBokrahTheme('invalid',root),TypeError);assert.equal(root.dataset.bkTheme,'dark');
 });
-test('both distributions include licensed font binaries',()=>{
+test('legacy font assets retain their original OFL notices',()=>{
  for(const folder of ['packages/web/dist/fonts','packages/flutter/assets/fonts'])for(const name of ['DMSans','Manrope','NotoSansArabic']){
   assert.ok(fs.statSync(`${folder}/${name}.ttf`).size>10000);
   assert.match(fs.readFileSync(`${folder}/${name}-OFL.txt`,'utf8'),/SIL OPEN FONT LICENSE/);

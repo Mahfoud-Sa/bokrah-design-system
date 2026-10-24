@@ -1,4 +1,5 @@
 * text=auto eol=lf
 *.ttf binary
+*.otf binary
 *.png binary
 *.ico binary

@@ -1,0 +1,19 @@
+/* Generated from tokens/fonts.json. */
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-Thin.otf') format('opentype');font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-ThinItalic.otf') format('opentype');font-weight:100;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-ExtraLight.otf') format('opentype');font-weight:200;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-ExtraLightItalic.otf') format('opentype');font-weight:200;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-LightItalic.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-RegularItalic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-MediumItalic.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-SemiBold.otf') format('opentype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-SemiBoldItalic.otf') format('opentype');font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-BoldItalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-ExtraBold.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-ExtraBoldItalic.otf') format('opentype');font-weight:800;font-style:italic;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-Black.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:'Somar Sans';src:url('./fonts/SomarSans-BlackItalic.otf') format('opentype');font-weight:900;font-style:italic;font-display:swap}

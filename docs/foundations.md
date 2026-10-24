@@ -26,7 +26,7 @@ Use primary for the main action; secondary for supporting content, accent for re
 
 | Property | Tokens / values | Unit |
 | --- | --- | --- |
-| Font families | Bokrah Sans (DM Sans), Bokrah Heading (Manrope), Bokrah Arabic (Noto Sans Arabic) | Locally bundled variable fonts |
+| Font families | Somar Sans for body, headings and Arabic | Locally bundled static OpenType faces: 100–900, normal and italic |
 | Sizes | 12, 14, 16, 24, 32, 48 | Logical pixels |
 | Weights | regular 400, medium 500, semibold 600, bold 700, extrabold 800 | Numeric font weight |
 | Line heights | heading 1.3, body 1.6, Arabic 1.8 | Ratio of font size |

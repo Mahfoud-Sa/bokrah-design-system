@@ -1,6 +1,6 @@
 // Generated.
 export const tokens = {
-  "version": "0.9.0",
+  "version": "0.10.0",
   "color": {
     "light": {
       "background": "#f7f7f0",
@@ -120,9 +120,9 @@ export const tokens = {
     "pill": 999
   },
   "font": {
-    "body": "Bokrah Sans",
-    "heading": "Bokrah Heading",
-    "arabic": "Bokrah Arabic"
+    "body": "Somar Sans",
+    "heading": "Somar Sans",
+    "arabic": "Somar Sans"
   },
   "fontSize": {
     "caption": 12,

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.10.0
+
+- Adopt user-provided Somar Sans for English and Arabic body text, headings and controls in web and Flutter.
+- Bundle standard-width OpenType weights 100–900 with matching italic faces and explicit weight/style mappings.
+- Generate web font faces from a shared asset manifest; retain asset provenance and verify binary integrity, weights and bilingual glyph coverage.
+- Refresh typography tokens, catalogues and documentation.
+
 ## 0.9.0
 
 - Document every public component against the ten required sections in English and Arabic.

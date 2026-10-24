@@ -159,9 +159,9 @@
   --bk-letter-spacing-tight: -0.03em;
   --bk-letter-spacing-normal: 0em;
   --bk-letter-spacing-wide: 0.08em;
-  --bk-font-body: 'Bokrah Sans';
-  --bk-font-heading: 'Bokrah Heading';
-  --bk-font-arabic: 'Bokrah Arabic';
+  --bk-font-body: 'Somar Sans';
+  --bk-font-heading: 'Somar Sans';
+  --bk-font-arabic: 'Somar Sans';
   --bk-easing-standard: cubic-bezier(0.2,0,0,1);
   --bk-easing-enter: cubic-bezier(0,0,0.2,1);
   --bk-easing-exit: cubic-bezier(0.4,0,1,1);

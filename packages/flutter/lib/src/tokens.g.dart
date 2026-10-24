@@ -101,9 +101,9 @@ abstract final class BkHighContrastColors {
   static const onNeutral = Color(0xFF000000);
 }
 abstract final class BkFont {
-  static const body = "Bokrah Sans";
-  static const heading = "Bokrah Heading";
-  static const arabic = "Bokrah Arabic";
+  static const body = "Somar Sans";
+  static const heading = "Somar Sans";
+  static const arabic = "Somar Sans";
 }
 abstract final class BkPalettes {
   static const Map<String, Map<String, Color>> all = {

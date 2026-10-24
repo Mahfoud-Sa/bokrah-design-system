@@ -46,6 +46,8 @@ const outputs={
  'packages/flutter/lib/src/foundations.g.dart':`// Generated.\nabstract final class BkFoundations {\n  static const categories = ${JSON.stringify(reference,null,2)};\n  static const icons = ${JSON.stringify(icons,null,2)};\n}\n`
 };
 for(const [name,paths] of Object.entries(icons))outputs[`packages/web/dist/icons/${name}.svg`]=svg(name,paths);
+const fontManifest=JSON.parse(fs.readFileSync(path.join(root,'tokens/fonts.json'),'utf8'));
+outputs['packages/web/dist/fonts.css']='/* Generated from tokens/fonts.json. */\n'+fontManifest.fonts.map(font=>`@font-face{font-family:'${fontManifest.family}';src:url('./fonts/${font.file}') format('opentype');font-weight:${font.weight};font-style:${font.style};font-display:swap}`).join('\n')+'\n';
 let stale=false;
 for(const [name,content] of Object.entries(outputs)){
  const target=path.join(root,name);

@@ -1,6 +1,6 @@
 name: bokrah_design_system
 description: Bokrah design tokens, Material themes, and reusable Arabic and English UI components.
-version: 0.9.0
+version: 0.10.0
 publish_to: none
 repository: https://github.com/Mahfoud-Sa/bokrah-design-system
 environment:
@@ -14,12 +14,50 @@ dev_dependencies:
     sdk: flutter
 flutter:
   fonts:
-    - family: Bokrah Sans
+    - family: Somar Sans
       fonts:
-        - asset: assets/fonts/DMSans.ttf
-    - family: Bokrah Heading
-      fonts:
-        - asset: assets/fonts/Manrope.ttf
-    - family: Bokrah Arabic
-      fonts:
-        - asset: assets/fonts/NotoSansArabic.ttf
+        - asset: assets/fonts/SomarSans-Thin.otf
+          weight: 100
+        - asset: assets/fonts/SomarSans-ThinItalic.otf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/SomarSans-ExtraLight.otf
+          weight: 200
+        - asset: assets/fonts/SomarSans-ExtraLightItalic.otf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/SomarSans-Light.otf
+          weight: 300
+        - asset: assets/fonts/SomarSans-LightItalic.otf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/SomarSans-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SomarSans-RegularItalic.otf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/SomarSans-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SomarSans-MediumItalic.otf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/SomarSans-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/SomarSans-SemiBoldItalic.otf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/SomarSans-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SomarSans-BoldItalic.otf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/SomarSans-ExtraBold.otf
+          weight: 800
+        - asset: assets/fonts/SomarSans-ExtraBoldItalic.otf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/SomarSans-Black.otf
+          weight: 900
+        - asset: assets/fonts/SomarSans-BlackItalic.otf
+          weight: 900
+          style: italic

@@ -54,7 +54,7 @@ export const componentReference = [
         "ar": "لا تعتمد على اللون وحده لتوضيح الحذف."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkButton extends StatelessWidget\nconst BkButton({\n    super.key,\n    required this.label,\n    this.onPressed,\n    this.icon,\n    this.loading = false,\n    this.loadingLabel = 'Loading',\n    this.variant = BkButtonVariant.primary,\n  });\nfinal String label;\nfinal VoidCallback? onPressed;\nfinal IconData? icon;\nfinal bool loading;\nfinal String loadingLabel;\nfinal BkButtonVariant variant;",
       "support": "enum BkButtonVariant { primary, secondary, tertiary, danger }",
@@ -120,7 +120,7 @@ export const componentReference = [
         "ar": "لا تجعل التلميح الشرح الوحيد لأيقونة غير مألوفة."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkIconButton extends StatelessWidget\nconst BkIconButton({\n    super.key,\n    required this.label,\n    required this.icon,\n    this.onPressed,\n  });\nfinal String label;\nfinal IconData icon;\nfinal VoidCallback? onPressed;",
       "support": "",
@@ -186,7 +186,7 @@ export const componentReference = [
         "ar": "لا تطبق تنقل الأسهم الخاص بشريط الأدوات دون تنفيذ شريط أدوات."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkButtonGroup extends StatelessWidget\nconst BkButtonGroup({super.key, required this.label, required this.children});\nfinal String label;\nfinal List<Widget> children;",
       "support": "",
@@ -252,7 +252,7 @@ export const componentReference = [
         "ar": "لا تستبدل التسمية بـ placeholder ولا القراءة فقط بالتعطيل."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkTextField extends StatelessWidget\nconst BkTextField({\n    super.key,\n    required this.label,\n    this.controller,\n    this.helperText,\n    this.errorText,\n    this.successText,\n    this.readOnly = false,\n    this.onChanged,\n    this.enabled = true,\n    this.keyboardType,\n  });\nfinal String label;\nfinal TextEditingController? controller;\nfinal String? helperText;\nfinal String? errorText;\nfinal String? successText;\nfinal bool readOnly;\nfinal ValueChanged<String>? onChanged;\nfinal bool enabled;\nfinal TextInputType? keyboardType;",
       "support": "",
@@ -318,7 +318,7 @@ export const componentReference = [
         "ar": "لا تضف دور زر إلى سطح عرض ساكن."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkCard extends StatelessWidget\nconst BkCard({\n    super.key,\n    required this.child,\n    this.padding = const EdgeInsets.all(BkSpace.xl),\n    this.tinted = false,\n  });\nfinal Widget child;\nfinal EdgeInsetsGeometry padding;\nfinal bool tinted;",
       "support": "",
@@ -384,7 +384,7 @@ export const componentReference = [
         "ar": "لا تعلن المحتوى الثابت باستمرار ولا تعتمد على اللون وحده."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkBadge extends StatelessWidget\nconst BkBadge({super.key, required this.label, this.tone = BkTone.neutral});\nfinal String label;\nfinal BkTone tone;",
       "support": "enum BkTone { neutral, success, warning, danger, info }",
@@ -450,7 +450,7 @@ export const componentReference = [
         "ar": "لا تعلن المحتوى الثابت باستمرار ولا تعتمد على اللون وحده."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkAlert extends StatelessWidget\nconst BkAlert({\n    super.key,\n    required this.title,\n    required this.message,\n    this.tone = BkTone.info,\n  });\nfinal String title;\nfinal String message;\nfinal BkTone tone;",
       "support": "enum BkTone { neutral, success, warning, danger, info }",
@@ -516,7 +516,7 @@ export const componentReference = [
         "ar": "لا تعرض نسباً وهمية ولا تستنتج الاكتمال من الوقت فقط."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkProgress extends StatelessWidget\nconst BkProgress({super.key, required this.label, this.value})\n    : assert(value == null || (value >= 0 && value <= 1));\nfinal String label;\nfinal double? value;",
       "support": "",
@@ -582,7 +582,7 @@ export const componentReference = [
         "ar": "لا تجعل كل شريط زخرفي عنصراً منفصلاً يعلن التحميل."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkSkeleton extends StatelessWidget\nconst BkSkeleton({super.key, this.width, this.height = BkSpace.lg});\nfinal double? width;\nfinal double height;",
       "support": "",
@@ -649,7 +649,7 @@ export const componentReference = [
       }
     },
     "kind": "statement",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// BkToast\nstatic ScaffoldFeatureController<SnackBar, SnackBarClosedReason> show(\n    BuildContext context, {\n    required String message,\n    BkTone tone = BkTone.info,\n    Duration duration = const Duration(seconds: 8),\n  });",
       "support": "enum BkTone { neutral, success, warning, danger, info }",
@@ -715,7 +715,7 @@ export const componentReference = [
         "ar": "لا تعتبر المكون آلة حساب أو تقريراً مدققاً."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkStatCard extends StatelessWidget\nconst BkStatCard({\n    super.key,\n    required this.label,\n    required this.value,\n    this.detail,\n    this.tinted = false,\n  });\nfinal String label;\nfinal String value;\nfinal String? detail;\nfinal bool tinted;",
       "support": "",
@@ -781,7 +781,7 @@ export const componentReference = [
         "ar": "لا تعرض الحالة الفارغة بينما لا يزال المحتوى قيد التحميل."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkEmptyState extends StatelessWidget\nconst BkEmptyState({\n    super.key,\n    required this.title,\n    required this.message,\n    this.action,\n  });\nfinal String title;\nfinal String message;\nfinal Widget? action;",
       "support": "",
@@ -847,7 +847,7 @@ export const componentReference = [
         "ar": "لا تضع Scaffold آخر داخل شريط التطبيق."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkAppBar extends StatelessWidget implements PreferredSizeWidget\nconst BkAppBar({\n    super.key,\n    required this.title,\n    this.leading,\n    this.actions = const [],\n    this.primary = true,\n  });\nfinal String title;\nfinal Widget? leading;\nfinal bool primary;\nfinal List<Widget> actions;",
       "support": "",
@@ -913,7 +913,7 @@ export const componentReference = [
         "ar": "لا تفترض أن المكون يدير المسارات أو صلاحيات الوجهات."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkNavigationBar extends StatelessWidget\nconst BkNavigationBar({\n    super.key,\n    required this.items,\n    required this.selectedIndex,\n    required this.onSelected,\n  }) : assert(selectedIndex >= 0 && selectedIndex < items.length);\nfinal List<BkNavigationItem> items;\nfinal int selectedIndex;\nfinal ValueChanged<int> onSelected;",
       "support": "// class BkNavigationItem\nconst BkNavigationItem({required this.label, required this.icon});\nfinal String label;\nfinal IconData icon;",
@@ -979,7 +979,7 @@ export const componentReference = [
         "ar": "لا تفترض أن المكون يدير المسارات أو صلاحيات الوجهات."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkSidebar extends StatelessWidget\nconst BkSidebar({\n    super.key,\n    required this.label,\n    required this.items,\n    required this.selectedIndex,\n    required this.onSelected,\n  }) : assert(selectedIndex >= 0 && selectedIndex < items.length);\nfinal String label;\nfinal List<BkNavigationItem> items;\nfinal int selectedIndex;\nfinal ValueChanged<int> onSelected;",
       "support": "// class BkNavigationItem\nconst BkNavigationItem({required this.label, required this.icon});\nfinal String label;\nfinal IconData icon;",
@@ -1049,7 +1049,7 @@ export const componentReference = [
       "bindBokrahModal"
     ],
     "javascript": "const destroy = bindBokrahModal(document.querySelector('#doc-drawer-open'), document.querySelector('#doc-drawer'));\n// Call destroy() before removing the trigger/dialog.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkNavigationDrawer extends StatelessWidget\nconst BkNavigationDrawer({\n    super.key,\n    required this.label,\n    required this.items,\n    required this.selectedIndex,\n    required this.onSelected,\n  });\nfinal String label;\nfinal List<BkNavigationItem> items;\nfinal int selectedIndex;\nfinal ValueChanged<int> onSelected;",
       "support": "// class BkNavigationItem\nconst BkNavigationItem({required this.label, required this.icon});\nfinal String label;\nfinal IconData icon;",
@@ -1115,7 +1115,7 @@ export const componentReference = [
         "ar": "لا تفترض أن المكون يدير المسارات أو صلاحيات الوجهات."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkBottomNavigation extends StatelessWidget\nconst BkBottomNavigation({\n    super.key,\n    required this.items,\n    required this.selectedIndex,\n    required this.onSelected,\n  }) : assert(items.length >= 2),\n       assert(selectedIndex >= 0 && selectedIndex < items.length);\nfinal List<BkNavigationItem> items;\nfinal int selectedIndex;\nfinal ValueChanged<int> onSelected;",
       "support": "// class BkNavigationItem\nconst BkNavigationItem({required this.label, required this.icon});\nfinal String label;\nfinal IconData icon;",
@@ -1185,7 +1185,7 @@ export const componentReference = [
       "bindBokrahTabs"
     ],
     "javascript": "const destroy = bindBokrahTabs(document.querySelector('#doc-tabs'), {onChange: index => console.log(index)});\n// Call destroy() before removing this group.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkTabs extends StatelessWidget implements PreferredSizeWidget\nconst BkTabs({super.key, required this.controller, required this.labels})\n    : assert(controller.length == labels.length);\nfinal TabController controller;\nfinal List<String> labels;",
       "support": "",
@@ -1251,7 +1251,7 @@ export const componentReference = [
         "ar": "لا تستنتج التسلسل الهرمي من تاريخ متصفح غير موثوق."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkBreadcrumbs extends StatelessWidget\nconst BkBreadcrumbs({super.key, required this.items})\n    : assert(items.length > 0);\nfinal List<BkBreadcrumb> items;",
       "support": "// class BkBreadcrumb\nconst BkBreadcrumb({required this.label, this.onPressed});\nfinal String label;\nfinal VoidCallback? onPressed;",
@@ -1317,7 +1317,7 @@ export const componentReference = [
         "ar": "لا تترك الصفحة خارج النطاق بعد التصفية."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkPagination extends StatelessWidget\nconst BkPagination({\n    super.key,\n    required this.page,\n    required this.pageCount,\n    required this.label,\n    required this.previousLabel,\n    required this.nextLabel,\n    required this.onChanged,\n  }) : assert(pageCount > 0),\n       assert(page >= 1 && page <= pageCount);\nfinal int page, pageCount;\nfinal String label, previousLabel, nextLabel;\nfinal ValueChanged<int> onChanged;",
       "support": "",
@@ -1383,7 +1383,7 @@ export const componentReference = [
         "ar": "لا تعلن اكتمال العملية قبل نجاح الحفظ الفعلي."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkStepper extends StatelessWidget\nconst BkStepper({\n    super.key,\n    required this.steps,\n    required this.currentStep,\n    this.onStepTapped,\n    this.onContinue,\n    this.onCancel,\n  }) : assert(currentStep >= 0 && currentStep < steps.length);\nfinal List<Step> steps;\nfinal int currentStep;\nfinal ValueChanged<int>? onStepTapped;\nfinal VoidCallback? onContinue, onCancel;",
       "support": "",
@@ -1453,7 +1453,7 @@ export const componentReference = [
       "bindBokrahMenu"
     ],
     "javascript": "const menu = bindBokrahMenu(document.querySelector('#doc-dropdown-menu-trigger'), document.querySelector('#doc-dropdown-menu'), {onSelect: value => console.log(value)});\n// Context surfaces can call menu.openAt(clientX, clientY, returnFocusElement).\n// Call menu.destroy() before removing the nodes.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkDropdownMenu<T extends Object> extends StatelessWidget\nconst BkDropdownMenu({\n    super.key,\n    required this.label,\n    required this.actions,\n    required this.onSelected,\n  });\nfinal String label;\nfinal List<BkMenuAction<T>> actions;\nfinal ValueChanged<T> onSelected;",
       "support": "// class BkMenuAction<T extends Object>\nconst BkMenuAction({\n    required this.value,\n    required this.label,\n    this.enabled = true,\n  });\nfinal T value;\nfinal String label;\nfinal bool enabled;",
@@ -1523,7 +1523,7 @@ export const componentReference = [
       "bindBokrahMenu"
     ],
     "javascript": "const menu = bindBokrahMenu(document.querySelector('#doc-context-menu-trigger'), document.querySelector('#doc-context-menu'), {onSelect: value => console.log(value)});\n// Context surfaces can call menu.openAt(clientX, clientY, returnFocusElement).\n// Call menu.destroy() before removing the nodes.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkContextMenu<T extends Object> extends StatelessWidget\nconst BkContextMenu({\n    super.key,\n    required this.label,\n    required this.child,\n    required this.actions,\n    required this.onSelected,\n  });\nfinal String label;\nfinal Widget child;\nfinal List<BkMenuAction<T>> actions;\nfinal ValueChanged<T> onSelected;",
       "support": "// class BkMenuAction<T extends Object>\nconst BkMenuAction({\n    required this.value,\n    required this.label,\n    this.enabled = true,\n  });\nfinal T value;\nfinal String label;\nfinal bool enabled;",
@@ -1589,7 +1589,7 @@ export const componentReference = [
         "ar": "لا تستخدم history.back دون تحقق في صفحة الدخول المباشر."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkBackButton extends StatelessWidget\nconst BkBackButton({super.key, required this.label, this.onPressed});\nfinal String label;\nfinal VoidCallback? onPressed;",
       "support": "",
@@ -1655,7 +1655,7 @@ export const componentReference = [
         "ar": "لا تعتبر onTap الفارغة زرّاً معطلاً؛ فهي تنشئ عنصراً ساكناً في فلاتر."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkListTile extends StatelessWidget\nconst BkListTile({\n    super.key,\n    required this.title,\n    this.subtitle,\n    this.leading,\n    this.trailing,\n    this.onTap,\n  });\nfinal String title;\nfinal String? subtitle;\nfinal Widget? leading, trailing;\nfinal VoidCallback? onTap;",
       "support": "",
@@ -1721,7 +1721,7 @@ export const componentReference = [
         "ar": "لا تضف role=grid دون تنفيذ نموذج لوحة مفاتيح الشبكة."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkDataGrid extends StatelessWidget\nBkDataGrid({\n    super.key,\n    required this.caption,\n    required this.columns,\n    required this.rows,\n    required this.emptyLabel,\n    this.numericColumns = const {},\n    this.sortColumnIndex,\n    this.sortAscending = true,\n    this.onSort,\n  }) : assert(columns.isNotEmpty),\n       assert(rows.every((row) => row.length == columns.length)),\n       assert(\n         sortColumnIndex == null ||\n             (sortColumnIndex >= 0 && sortColumnIndex < columns.length),\n       );\nfinal String caption, emptyLabel;\nfinal List<String> columns;\nfinal List<List<String>> rows;\nfinal Set<int> numericColumns;\nfinal int? sortColumnIndex;\nfinal bool sortAscending;\nfinal void Function(int, bool)? onSort;",
       "support": "",
@@ -1787,7 +1787,7 @@ export const componentReference = [
         "ar": "لا توضح الصلاحيات أو تحقق الهوية بالصورة وحدها."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkAvatar extends StatelessWidget\nconst BkAvatar({\n    super.key,\n    required this.label,\n    required this.initials,\n    this.image,\n    this.size = 48,\n  });\nfinal String label, initials;\nfinal ImageProvider? image;\nfinal double size;",
       "support": "",
@@ -1853,7 +1853,7 @@ export const componentReference = [
         "ar": "لا تفترض أن الحزمة تتضمن صورة المطعم الخاصة بالكتالوج."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkImage extends StatelessWidget\nconst BkImage({\n    super.key,\n    required this.image,\n    required this.label,\n    required this.loadingLabel,\n    required this.errorLabel,\n    this.aspectRatio = 16 / 9,\n  });\nfinal ImageProvider image;\nfinal String label, loadingLabel, errorLabel;\nfinal double aspectRatio;",
       "support": "",
@@ -1919,7 +1919,7 @@ export const componentReference = [
         "ar": "لا تصف الغلاف كـ FilterChip محدد؛ لا يوفر واجهة اختيار."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkTag extends StatelessWidget\nconst BkTag({\n    super.key,\n    required this.label,\n    this.onDeleted,\n    this.deleteLabel,\n  }) : assert(onDeleted == null || deleteLabel != null);\nfinal String label;\nfinal VoidCallback? onDeleted;\nfinal String? deleteLabel;",
       "support": "",
@@ -1989,7 +1989,7 @@ export const componentReference = [
       "bindBokrahTooltip"
     ],
     "javascript": "const destroy = bindBokrahTooltip(document.querySelector('#doc-help'), document.querySelector('#doc-tooltip'));\n// Call destroy() before removing either node.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkTooltip extends StatelessWidget\nconst BkTooltip({super.key, required this.label, required this.child});\nfinal String label;\nfinal Widget child;",
       "support": "",
@@ -2059,7 +2059,7 @@ export const componentReference = [
       "bindBokrahPopover"
     ],
     "javascript": "const popover = bindBokrahPopover(document.querySelector('#doc-popover-open'), document.querySelector('#doc-popover'));\n// popover.open(); popover.close();\n// Call popover.destroy() before removing its nodes.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkPopover extends StatefulWidget\nconst BkPopover({\n    super.key,\n    required this.label,\n    required this.title,\n    required this.message,\n    required this.closeLabel,\n  });\nfinal String label, title, message, closeLabel;",
       "support": "",
@@ -2125,7 +2125,7 @@ export const componentReference = [
         "ar": "لا تخفِ خطأ تحقق يمنع التقدم داخل لوحة مطوية."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkAccordion extends StatelessWidget\nconst BkAccordion({\n    super.key,\n    required this.title,\n    required this.children,\n    this.initiallyExpanded = false,\n  });\nfinal String title;\nfinal List<Widget> children;\nfinal bool initiallyExpanded;",
       "support": "",
@@ -2191,7 +2191,7 @@ export const componentReference = [
         "ar": "لا تعتبر التسلسل المرئي سجل التدقيق المعتمد."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkTimeline extends StatelessWidget\nconst BkTimeline({super.key, required this.entries});\nfinal List<BkTimelineEntry> entries;",
       "support": "// class BkTimelineEntry\nconst BkTimelineEntry({\n    required this.title,\n    required this.detail,\n    required this.time,\n  });\nfinal String title, detail, time;",
@@ -2257,7 +2257,7 @@ export const componentReference = [
         "ar": "لا تمرر قيماً سالبة أو غير محدودة ولا تعتمد على اللون أو الطول وحده."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkBarChart extends StatelessWidget\nconst BkBarChart({\n    super.key,\n    required this.label,\n    required this.values,\n    required this.emptyLabel,\n  });\nfinal String label, emptyLabel;\nfinal List<BkChartValue> values;",
       "support": "// class BkChartValue\nconst BkChartValue({\n    required this.label,\n    required this.value,\n    required this.displayValue,\n  }) : assert(value >= 0 && value < double.infinity);\nfinal String label, displayValue;\nfinal double value;",
@@ -2323,7 +2323,7 @@ export const componentReference = [
         "ar": "لا تفترض أن الأخضر نتيجة مالية جيدة دون سياق المجال."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkKpiCard extends StatelessWidget\nconst BkKpiCard({\n    super.key,\n    required this.label,\n    required this.value,\n    required this.comparison,\n    this.comparisonTone = BkTone.neutral,\n  });\nfinal String label, value, comparison;\nfinal BkTone comparisonTone;",
       "support": "enum BkTone { neutral, success, warning, danger, info }",
@@ -2389,7 +2389,7 @@ export const componentReference = [
         "ar": "لا تصف عدم المطابقة كفشل اتصال أو حساب جديد."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkNoResults extends StatelessWidget\nconst BkNoResults({\n    super.key,\n    required this.title,\n    required this.message,\n    required this.clearLabel,\n    this.onClear,\n  });\nfinal String title, message, clearLabel;\nfinal VoidCallback? onClear;",
       "support": "",
@@ -2455,7 +2455,7 @@ export const componentReference = [
         "ar": "لا تعكس جميع الرموز في العربية."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkIcon extends StatelessWidget\nconst BkIcon(\n    this.name, {\n    super.key,\n    this.size = BkIconSize.standard,\n    this.strokeWidth = BkIconStroke.standard,\n    this.color,\n    this.semanticLabel,\n  });\nfinal BkIconName name;\nfinal double size;\nfinal double strokeWidth;\nfinal Color? color;\nfinal String? semanticLabel;",
       "support": "enum BkIconName {\n  add,\n  check,\n  close,\n  search,\n  download,\n  arrowForward,\n  receipt,\n  menu,\n}",
@@ -2521,7 +2521,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkContainer extends StatelessWidget\nconst BkContainer({super.key, required this.child, this.maxWidth = 1200});\nfinal Widget child;\nfinal double maxWidth;",
       "support": "",
@@ -2587,7 +2587,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkRow extends StatelessWidget\nconst BkRow({super.key, required this.children, this.gap = BkSpace.lg});\nfinal List<Widget> children;\nfinal double gap;",
       "support": "",
@@ -2653,7 +2653,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkColumn extends StatelessWidget\nconst BkColumn({super.key, required this.children, this.gap = BkSpace.lg});\nfinal List<Widget> children;\nfinal double gap;",
       "support": "",
@@ -2719,7 +2719,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkResponsiveGrid extends StatelessWidget\nconst BkResponsiveGrid({super.key, required this.children});\nfinal List<Widget> children;",
       "support": "",
@@ -2785,7 +2785,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkDivider extends StatelessWidget\nconst BkDivider({super.key});\n",
       "support": "",
@@ -2851,7 +2851,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkSpacer extends StatelessWidget\nconst BkSpacer({\n    super.key,\n    this.size = BkSpace.lg,\n    this.axis = Axis.vertical,\n  });\nfinal double size;\nfinal Axis axis;",
       "support": "",
@@ -2917,7 +2917,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkStack extends StatelessWidget\nconst BkStack({\n    super.key,\n    required this.children,\n    this.alignment = AlignmentDirectional.topStart,\n  });\nfinal List<Widget> children;\nfinal AlignmentGeometry alignment;",
       "support": "",
@@ -2983,7 +2983,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkResponsiveLayout extends StatelessWidget\nconst BkResponsiveLayout({\n    super.key,\n    required this.compact,\n    required this.medium,\n    required this.wide,\n  });\nfinal WidgetBuilder compact, medium, wide;",
       "support": "",
@@ -3049,7 +3049,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkPageScaffold extends StatelessWidget\nconst BkPageScaffold({\n    super.key,\n    required this.body,\n    this.appBar,\n    this.drawer,\n    this.bottomNavigationBar,\n    this.floatingActionButton,\n  });\nfinal Widget body;\nfinal PreferredSizeWidget? appBar;\nfinal Widget? drawer, bottomNavigationBar, floatingActionButton;",
       "support": "",
@@ -3115,7 +3115,7 @@ export const componentReference = [
         "ar": "لا تجعل التخطيط بديلاً للتفاعل ولا تقطع محتوى مهماً لإخفاء تجاوز العرض."
       }
     },
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "// class BkSectionHeader extends StatelessWidget\nconst BkSectionHeader({\n    super.key,\n    required this.title,\n    this.description,\n    this.action,\n  });\nfinal String title;\nfinal String? description;\nfinal Widget? action;",
       "support": "",
@@ -3185,7 +3185,7 @@ export const componentReference = [
       "bindBokrahModal"
     ],
     "javascript": "const destroy = bindBokrahModal(document.querySelector('#doc-modal-open'), document.querySelector('#doc-modal'));\n// Call destroy() before removing the trigger/dialog.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "Future<T?> showBkModal<T>({\n  required BuildContext context,\n  required String title,\n  required String closeLabel,\n  required WidgetBuilder builder,\n});",
       "support": "",
@@ -3255,7 +3255,7 @@ export const componentReference = [
       "bindBokrahModal"
     ],
     "javascript": "const destroy = bindBokrahModal(document.querySelector('#doc-bottom-sheet-open'), document.querySelector('#doc-bottom-sheet'));\n// Call destroy() before removing the trigger/dialog.",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "api": {
       "flutter": "Future<T?> showBkBottomSheet<T>({\n  required BuildContext context,\n  required String title,\n  required String closeLabel,\n  required WidgetBuilder builder,\n});",
       "support": "",

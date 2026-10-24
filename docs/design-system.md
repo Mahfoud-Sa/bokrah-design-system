@@ -22,7 +22,7 @@ The current app's `lib/app/config/theme.dart` uses orange #E65100 with larger ra
 
 Semantic names describe purpose: primary/onPrimary, text/muted, background/surface/surfaceAlt, border/controlBorder, focus, and success/warning/danger/info. Never use color alone for status. Chart decoration may use sage, but readable text must use semantic foregrounds. Website muted copy has deliberately been darkened to meet the documented contrast checks. Subtle borders are decorative; use controlBorder to identify inputs.
 
-Body uses DM Sans, headings Manrope, Arabic Noto Sans Arabic. All three variable fonts are bundled locally under their original SIL Open Font Licenses. Flutter package families are package-qualified. Consumers get offline rendering; no runtime Google Fonts request is needed. Typography: 12 caption, 14 small, 16 body, 24 title, 32 heading, 48 display. Avoid clipping at large text scales.
+Body, headings and Arabic use Somar Sans from the supplied archive. Standard-width static OpenType faces cover weights 100–900 in normal and italic styles, with explicit CSS/Flutter registrations. Asset provenance is recorded in fonts/SomarSans-NOTICE.md in both distributions. Flutter package families are package-qualified. Consumers get offline rendering; no runtime Google Fonts request is needed. Typography: 12 caption, 14 small, 16 body, 24 title, 32 heading, 48 display. Avoid clipping at large text scales.
 
 Spacing uses 4, 8, 12, 16, 24, 32, 48 and 64 units. Radii: 6, 8, 12 and 20; pill is for compact statuses. Interactive controls target 48 logical pixels. Web layouts collapse below 760px. Use responsive constraints rather than fixed heights for text content.
 

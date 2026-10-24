@@ -66,7 +66,7 @@ dependencies:
       ref: main
 ```
 
-Pin a reviewed commit or release tag for production. Import `package:bokrah_design_system/bokrah_design_system.dart` and use `BkTheme.light()`, `BkTheme.dark()`, and the exported components. Pass `arabic: true` for the Arabic font; the app owns locale and Directionality. See `examples/flutter/lib/main.dart`.
+Pin a reviewed commit or release tag for production. Import `package:bokrah_design_system/bokrah_design_system.dart` and use `BkTheme.light()`, `BkTheme.dark()`, and the exported components. Somar Sans is shared by English and Arabic. Pass `arabic: true` for Arabic typography metrics; the app owns locale and Directionality. See `examples/flutter/lib/main.dart`.
 
 ## Development
 

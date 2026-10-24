@@ -156,9 +156,9 @@ export const foundations = [
     ],
     "values": {
       "font": {
-        "body": "Bokrah Sans",
-        "heading": "Bokrah Heading",
-        "arabic": "Bokrah Arabic"
+        "body": "Somar Sans",
+        "heading": "Somar Sans",
+        "arabic": "Somar Sans"
       },
       "fontSize": {
         "caption": 12,
