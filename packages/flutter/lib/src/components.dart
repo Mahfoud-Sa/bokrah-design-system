@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'tokens.g.dart';
 import 'theme.dart';
 
-enum BkButtonVariant { primary, secondary, danger }
+enum BkButtonVariant { primary, secondary, tertiary, danger }
 
 enum BkTone { neutral, success, warning, danger, info }
 
@@ -45,7 +45,19 @@ class BkButton extends StatelessWidget {
         Flexible(child: Text(label)),
       ],
     );
-    final button = variant == BkButtonVariant.secondary
+    final button = variant == BkButtonVariant.tertiary
+        ? TextButton(
+            onPressed: action,
+            style: TextButton.styleFrom(
+              minimumSize: const Size(48, 48),
+              padding: const EdgeInsets.symmetric(
+                horizontal: BkSpace.xl,
+                vertical: BkSpace.md,
+              ),
+            ),
+            child: content,
+          )
+        : variant == BkButtonVariant.secondary
         ? OutlinedButton(onPressed: action, child: content)
         : FilledButton(
             onPressed: action,

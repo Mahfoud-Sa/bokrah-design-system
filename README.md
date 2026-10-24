@@ -6,6 +6,8 @@ Shared visual language for Bokrah, based on the [Bokrah website](https://mahfoud
 
 [Complete foundations: all 10 categories](docs/foundations.md)
 
+[2. UI Components: Buttons & Actions, Feedback & Status](docs/ui-components.md)
+
 ## Contents
 
 - [Repository](#repository)

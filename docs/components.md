@@ -1,5 +1,7 @@
 # Component usage
 
+[2. UI Components — Buttons & Actions / Feedback & Status](ui-components.md)
+
 ## Flutter
 
 ```dart
@@ -10,7 +12,7 @@ MaterialApp(
 );
 ```
 
-`BkButton` accepts `label`, `onPressed`, optional `icon`, `variant` (`primary`, `secondary`, `danger`), `loading` and a localized `loadingLabel`. A null callback is disabled; loading also disables activation. Keep business state in the consuming app. Do not attach financial side effects to a showcase.
+`BkButton` accepts `label`, `onPressed`, optional `icon`, `variant` (`primary`, `secondary`, `tertiary`, `danger`), `loading` and a localized `loadingLabel`. A null callback is disabled; loading also disables activation. Keep business state in the consuming app. Do not attach financial side effects to a showcase.
 
 `BkTextField` exposes controller, label, helper/error text, keyboard type and change callback. It does not parse or round money. `BkBadge` and `BkAlert` accept `BkTone` and always have visible textual meaning. Alerts do not announce automatically: consumers choose live-region behavior appropriate to actual events.
 

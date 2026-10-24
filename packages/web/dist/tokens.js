@@ -1,6 +1,6 @@
 // Generated.
 export const tokens = {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "color": {
     "light": {
       "background": "#f7f7f0",

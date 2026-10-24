@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- Add UI component groups: Buttons & Actions and Feedback & Status.
+- Add tertiary actions, named icon buttons, wrapping button groups, toast/snackbar, progress and skeleton primitives.
+- Add bilingual interactive examples, destructive confirmation previews and component state/accessibility documentation.
+- Test accessible action activation, native progress semantics and toast dismissal.
+
 ## 0.2.0
 
 - Complete all ten foundation categories with generated CSS/Dart tokens and bilingual catalogue references.

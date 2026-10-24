@@ -1,6 +1,6 @@
 {
   "name": "@bokrah/design-system",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Bokrah design tokens and accessible framework-independent web styles",
   "type": "module",
   "files": [

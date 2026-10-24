@@ -1,6 +1,6 @@
 name: bokrah_design_system
 description: Bokrah design tokens, Material themes, and reusable Arabic and English UI components.
-version: 0.2.0
+version: 0.3.0
 publish_to: none
 repository: https://github.com/Mahfoud-Sa/bokrah-design-system
 environment:
