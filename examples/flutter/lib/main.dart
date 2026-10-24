@@ -1,3 +1,4 @@
+import 'foundations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:bokrah_design_system/bokrah_design_system.dart';
@@ -12,7 +13,7 @@ class BokrahCatalog extends StatefulWidget {
 
 class _BokrahCatalogState extends State<BokrahCatalog> {
   bool arabic = false;
-  bool dark = false;
+  int themeIndex = 0;
   String text(String en, String ar) => arabic ? ar : en;
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -21,9 +22,13 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
     locale: Locale(arabic ? 'ar' : 'en'),
     supportedLocales: const [Locale('en'), Locale('ar')],
     localizationsDelegates: GlobalMaterialLocalizations.delegates,
-    theme: BkTheme.light(arabic: arabic),
+    theme: themeIndex == 2
+        ? BkTheme.highContrast(arabic: arabic)
+        : BkTheme.light(arabic: arabic),
     darkTheme: BkTheme.dark(arabic: arabic),
-    themeMode: dark ? ThemeMode.dark : ThemeMode.light,
+    highContrastTheme: BkTheme.highContrast(arabic: arabic),
+    highContrastDarkTheme: BkTheme.highContrast(arabic: arabic),
+    themeMode: themeIndex == 1 ? ThemeMode.dark : ThemeMode.light,
     home: Builder(
       builder: (context) => Scaffold(
         appBar: AppBar(
@@ -35,9 +40,14 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
             ),
             IconButton(
               tooltip: text('Toggle theme', 'تغيير المظهر'),
-              onPressed: () => setState(() => dark = !dark),
+              onPressed: () =>
+                  setState(() => themeIndex = (themeIndex + 1) % 3),
               icon: Icon(
-                dark ? Icons.light_mode_outlined : Icons.dark_mode_outlined,
+                themeIndex == 2
+                    ? Icons.contrast
+                    : themeIndex == 1
+                    ? Icons.light_mode_outlined
+                    : Icons.dark_mode_outlined,
               ),
             ),
           ],
@@ -56,10 +66,12 @@ class _BokrahCatalogState extends State<BokrahCatalog> {
                 const SizedBox(height: BkSpace.lg),
                 Text(
                   text(
-                    'Bokrah design system · Flutter catalogue · v0.1.0',
-                    'نظام تصميم بكرة · مكتبة فلاتر · 0.1.0',
+                    'Bokrah design system · Flutter catalogue · v0.2.0',
+                    'نظام تصميم بكرة · مكتبة فلاتر · 0.2.0',
                   ),
                 ),
+                const SizedBox(height: BkSpace.xxl),
+                FoundationCatalogue(arabic: arabic),
                 const SizedBox(height: BkSpace.xxl),
                 Wrap(
                   spacing: BkSpace.lg,

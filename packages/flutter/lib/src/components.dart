@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'tokens.g.dart';
+import 'theme.dart';
 
 enum BkButtonVariant { primary, secondary, danger }
 
@@ -77,10 +78,10 @@ class BkCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: tinted ? scheme.surfaceContainerLow : scheme.surface,
-        border: Border.all(color: scheme.outlineVariant),
+    return Material(
+      color: tinted ? scheme.surfaceContainerLow : scheme.surface,
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: scheme.outlineVariant),
         borderRadius: BorderRadius.circular(BkRadius.lg),
       ),
       child: Padding(padding: padding, child: child),
@@ -89,29 +90,9 @@ class BkCard extends StatelessWidget {
 }
 
 (Color, Color) _tone(BuildContext context, BkTone tone) {
-  final dark = Theme.of(context).brightness == Brightness.dark;
-  return switch (tone) {
-    BkTone.success => (
-      dark ? BkDarkColors.successSurface : BkLightColors.successSurface,
-      dark ? BkDarkColors.success : BkLightColors.success,
-    ),
-    BkTone.warning => (
-      dark ? BkDarkColors.warningSurface : BkLightColors.warningSurface,
-      dark ? BkDarkColors.warning : BkLightColors.warning,
-    ),
-    BkTone.danger => (
-      dark ? BkDarkColors.dangerSurface : BkLightColors.dangerSurface,
-      dark ? BkDarkColors.danger : BkLightColors.danger,
-    ),
-    BkTone.info => (
-      dark ? BkDarkColors.infoSurface : BkLightColors.infoSurface,
-      dark ? BkDarkColors.info : BkLightColors.info,
-    ),
-    BkTone.neutral => (
-      Theme.of(context).colorScheme.surfaceContainerLow,
-      Theme.of(context).colorScheme.onSurface,
-    ),
-  };
+  final c = BkThemeTokens.of(context);
+  if (tone == BkTone.neutral) return (c['surfaceAlt']!, c['text']!);
+  return (c['${tone.name}Surface']!, c[tone.name]!);
 }
 
 class BkBadge extends StatelessWidget {

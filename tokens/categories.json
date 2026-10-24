@@ -1,0 +1,215 @@
+[
+  {
+    "id": "colors",
+    "en": "Colors",
+    "ar": "الألوان",
+    "itemsEn": [
+      "Primary",
+      "Secondary",
+      "Accent",
+      "Neutral",
+      "Semantic",
+      "Surface",
+      "Background"
+    ],
+    "itemsAr": [
+      "الأساسي",
+      "الثانوي",
+      "التمييز",
+      "المحايد",
+      "الدلالي",
+      "السطح",
+      "الخلفية"
+    ],
+    "groups": [
+      "color"
+    ]
+  },
+  {
+    "id": "typography",
+    "en": "Typography",
+    "ar": "الخطوط",
+    "itemsEn": [
+      "Font families",
+      "Font sizes",
+      "Font weights",
+      "Line heights",
+      "Letter spacing"
+    ],
+    "itemsAr": [
+      "عائلات الخطوط",
+      "أحجام الخطوط",
+      "الأوزان",
+      "ارتفاع السطر",
+      "تباعد الحروف"
+    ],
+    "groups": [
+      "font",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing"
+    ]
+  },
+  {
+    "id": "spacing",
+    "en": "Spacing",
+    "ar": "المسافات",
+    "itemsEn": [
+      "4px",
+      "8px",
+      "12px",
+      "16px",
+      "24px",
+      "32px",
+      "48px"
+    ],
+    "itemsAr": [
+      "4px",
+      "8px",
+      "12px",
+      "16px",
+      "24px",
+      "32px",
+      "48px"
+    ],
+    "groups": [
+      "space"
+    ]
+  },
+  {
+    "id": "borders",
+    "en": "Borders",
+    "ar": "الحدود",
+    "itemsEn": [
+      "Border width",
+      "Border color",
+      "Border radius"
+    ],
+    "itemsAr": [
+      "سماكة الحدود",
+      "لون الحدود",
+      "نصف قطر الزوايا"
+    ],
+    "groups": [
+      "borderWidth",
+      "radius"
+    ]
+  },
+  {
+    "id": "shadows",
+    "en": "Shadows",
+    "ar": "الظلال",
+    "itemsEn": [
+      "Elevation",
+      "Box shadow",
+      "Drop shadow"
+    ],
+    "itemsAr": [
+      "الارتفاع",
+      "ظل الصندوق",
+      "الظل المسقط"
+    ],
+    "groups": [
+      "elevation",
+      "shadow",
+      "dropShadow"
+    ]
+  },
+  {
+    "id": "icons",
+    "en": "Icons",
+    "ar": "الأيقونات",
+    "itemsEn": [
+      "Icon library",
+      "Sizes",
+      "Stroke width"
+    ],
+    "itemsAr": [
+      "مكتبة الأيقونات",
+      "الأحجام",
+      "سماكة الخط"
+    ],
+    "groups": [
+      "icon",
+      "iconSize",
+      "iconStroke"
+    ]
+  },
+  {
+    "id": "grid",
+    "en": "Grid",
+    "ar": "الشبكة",
+    "itemsEn": [
+      "Columns",
+      "Gutters",
+      "Margins",
+      "Breakpoints"
+    ],
+    "itemsAr": [
+      "الأعمدة",
+      "الفواصل",
+      "الهوامش",
+      "نقاط التحول"
+    ],
+    "groups": [
+      "grid"
+    ]
+  },
+  {
+    "id": "motion",
+    "en": "Motion",
+    "ar": "الحركة",
+    "itemsEn": [
+      "Animation duration",
+      "Easing",
+      "Transitions"
+    ],
+    "itemsAr": [
+      "مدة الحركة",
+      "منحنيات التسهيل",
+      "الانتقالات"
+    ],
+    "groups": [
+      "motion",
+      "easing",
+      "transition"
+    ]
+  },
+  {
+    "id": "themes",
+    "en": "Themes",
+    "ar": "المظاهر",
+    "itemsEn": [
+      "Light mode",
+      "Dark mode",
+      "High contrast"
+    ],
+    "itemsAr": [
+      "فاتح",
+      "داكن",
+      "تباين عالٍ"
+    ],
+    "groups": []
+  },
+  {
+    "id": "accessibility",
+    "en": "Accessibility",
+    "ar": "إمكانية الوصول",
+    "itemsEn": [
+      "Contrast",
+      "Focus indicators",
+      "Touch targets",
+      "RTL support"
+    ],
+    "itemsAr": [
+      "التباين",
+      "مؤشرات التركيز",
+      "أهداف اللمس",
+      "دعم الاتجاه من اليمين"
+    ],
+    "groups": [
+      "accessibility"
+    ]
+  }
+]

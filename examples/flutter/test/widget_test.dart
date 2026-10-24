@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:bokrah_catalog/main.dart';
+import 'package:bokrah_design_system/bokrah_design_system.dart';
 
 void main() {
   testWidgets('language switch sets RTL and theme can change', (tester) async {
@@ -18,6 +19,11 @@ void main() {
       Theme.of(tester.element(find.byType(Scaffold))).brightness,
       Brightness.dark,
     );
+    await tester.tap(find.byTooltip('تغيير المظهر'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    final palette = BkThemeTokens.of(tester.element(find.byType(Scaffold)));
+    expect(palette['background'], Colors.black);
     expect(tester.takeException(), isNull);
   });
 }

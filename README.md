@@ -1,8 +1,10 @@
 # Bokrah design system
 
-Shared visual language for Bokrah, based on the [Bokrah website](https://mahfoud-sa.github.io/bokrah-website/). Arabic and English, light and dark, Flutter and web.
+Shared visual language for Bokrah, based on the [Bokrah website](https://mahfoud-sa.github.io/bokrah-website/). Arabic and English, light, dark and high contrast, Flutter and web.
 
 [Live web catalogue](https://mahfoud-sa.github.io/bokrah-design-system/) · [Flutter catalogue](https://mahfoud-sa.github.io/bokrah-design-system/flutter/) · [الدليل العربي](docs/README.ar.md)
+
+[Complete foundations: all 10 categories](docs/foundations.md)
 
 ## Contents
 

@@ -1,13 +1,21 @@
 export interface BokrahTokens {
-  version: string;
-  color: Record<'light' | 'dark', Record<string, string>>;
-  space: Record<string, number>;
-  radius: Record<string, number>;
-  font: Record<string, string>;
-  fontSize: Record<string, number>;
-  layout: Record<string, number>;
-  motion: Record<string, number>;
+ version:string;
+ color:Record<'light'|'dark'|'highContrast',Record<string,string>>;
+ font:Record<string,string>;
+ space:Record<string,number>;radius:Record<string,number>;fontSize:Record<string,number>;
+ fontWeight:Record<string,number>;lineHeight:Record<string,number>;letterSpacing:Record<string,number>;
+ borderWidth:Record<string,number>;elevation:Record<string,number>;layout:Record<string,number>;
+ motion:Record<string,number>;iconSize:Record<string,number>;iconStroke:Record<string,number>;
+ shadow:Record<string,{x:number;y:number;blur:number;spread:number;opacity:number}>;
+ dropShadow:Record<string,{x:number;y:number;blur:number;opacity:number}>;
+ icon:{library:string;viewBox:number;strokeWidth:number};
+ grid:{columns:Record<string,number>;gutter:Record<string,number>;margin:Record<string,number>;breakpoint:Record<string,number>;maxWidth:number};
+ easing:Record<string,number[]>;
+ transition:Record<string,{duration:string;easing:string}>;
+ accessibility:Record<string,number>;
 }
-export const tokens: Readonly<BokrahTokens>;
-export function setBokrahTheme(theme: 'light' | 'dark', root?: Pick<HTMLElement, 'dataset'>): void;
-export function setBokrahLanguage(language: 'en' | 'ar', root?: Pick<HTMLElement, 'lang' | 'dir'>): void;
+export const tokens:Readonly<BokrahTokens>;
+export function setBokrahTheme(theme:'light'|'dark'|'high-contrast',root?:Pick<HTMLElement,'dataset'>):void;
+export function setBokrahLanguage(language:'en'|'ar',root?:Pick<HTMLElement,'lang'|'dir'>):void;
+export const foundations:ReadonlyArray<{id:string;en:string;ar:string;itemsEn:string[];itemsAr:string[];groups:string[];values:Record<string,unknown>}>;
+export const icons:Record<string,Array<Array<[string,...number[]]>>>;

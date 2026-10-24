@@ -1,6 +1,6 @@
 // Generated.
 export const tokens = {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "color": {
     "light": {
       "background": "#f7f7f0",
@@ -25,7 +25,15 @@ export const tokens = {
       "dangerSurface": "#fdeae7",
       "info": "#275875",
       "onInfo": "#ffffff",
-      "infoSurface": "#e7f1f8"
+      "infoSurface": "#e7f1f8",
+      "secondary": "#315c70",
+      "onSecondary": "#ffffff",
+      "secondarySurface": "#e8f0f4",
+      "accent": "#775817",
+      "onAccent": "#ffffff",
+      "accentSurface": "#f8edcf",
+      "neutral": "#596952",
+      "onNeutral": "#ffffff"
     },
     "dark": {
       "background": "#13251d",
@@ -50,7 +58,48 @@ export const tokens = {
       "dangerSurface": "#472825",
       "info": "#a9cee8",
       "onInfo": "#163346",
-      "infoSurface": "#243e51"
+      "infoSurface": "#243e51",
+      "secondary": "#abd2e5",
+      "onSecondary": "#15313f",
+      "secondarySurface": "#243c47",
+      "accent": "#e7cc89",
+      "onAccent": "#352a10",
+      "accentSurface": "#40361e",
+      "neutral": "#b1c2aa",
+      "onNeutral": "#17251a"
+    },
+    "highContrast": {
+      "background": "#000000",
+      "surface": "#080808",
+      "surfaceAlt": "#121212",
+      "text": "#ffffff",
+      "muted": "#e4e4e4",
+      "primary": "#baff87",
+      "primaryHover": "#d5ffb4",
+      "onPrimary": "#000000",
+      "border": "#aaaaaa",
+      "controlBorder": "#dddddd",
+      "focus": "#ffef00",
+      "success": "#aaffb2",
+      "onSuccess": "#000000",
+      "successSurface": "#07180b",
+      "warning": "#ffe180",
+      "onWarning": "#000000",
+      "warningSurface": "#211800",
+      "danger": "#ffb4ae",
+      "onDanger": "#000000",
+      "dangerSurface": "#210c0a",
+      "info": "#aaddff",
+      "onInfo": "#000000",
+      "infoSurface": "#071a27",
+      "secondary": "#9fdbff",
+      "onSecondary": "#000000",
+      "secondarySurface": "#10202a",
+      "accent": "#ffe180",
+      "onAccent": "#000000",
+      "accentSurface": "#251d00",
+      "neutral": "#dddddd",
+      "onNeutral": "#000000"
     }
   },
   "space": {
@@ -89,11 +138,162 @@ export const tokens = {
     "breakpoint": 760
   },
   "motion": {
-    "fast": 160
+    "fast": 160,
+    "instant": 0,
+    "normal": 240,
+    "slow": 400
   },
   "source": {
     "website": "https://mahfoud-sa.github.io/bokrah-website/",
     "flutter": "lib/app/config/theme.dart in Mahfoud-Sa/bokrah",
     "reviewed": "2026-10-24"
+  },
+  "fontWeight": {
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800
+  },
+  "lineHeight": {
+    "heading": 1.3,
+    "body": 1.6,
+    "arabic": 1.8
+  },
+  "letterSpacing": {
+    "tight": -0.03,
+    "normal": 0,
+    "wide": 0.08
+  },
+  "borderWidth": {
+    "none": 0,
+    "hairline": 1,
+    "strong": 2,
+    "focus": 3
+  },
+  "elevation": {
+    "flat": 0,
+    "raised": 1,
+    "floating": 4,
+    "overlay": 8
+  },
+  "shadow": {
+    "raised": {
+      "x": 0,
+      "y": 2,
+      "blur": 8,
+      "spread": 0,
+      "opacity": 0.08
+    },
+    "floating": {
+      "x": 0,
+      "y": 6,
+      "blur": 20,
+      "spread": 0,
+      "opacity": 0.14
+    },
+    "overlay": {
+      "x": 0,
+      "y": 12,
+      "blur": 40,
+      "spread": 0,
+      "opacity": 0.22
+    }
+  },
+  "dropShadow": {
+    "subtle": {
+      "x": 0,
+      "y": 2,
+      "blur": 3,
+      "opacity": 0.18
+    },
+    "strong": {
+      "x": 0,
+      "y": 4,
+      "blur": 6,
+      "opacity": 0.28
+    }
+  },
+  "icon": {
+    "library": "Bokrah Outline",
+    "viewBox": 24,
+    "strokeWidth": 2
+  },
+  "iconSize": {
+    "small": 16,
+    "medium": 20,
+    "standard": 24,
+    "large": 32,
+    "display": 48
+  },
+  "iconStroke": {
+    "fine": 1.5,
+    "standard": 2,
+    "strong": 2.5
+  },
+  "grid": {
+    "columns": {
+      "compact": 4,
+      "medium": 8,
+      "wide": 12
+    },
+    "gutter": {
+      "compact": 16,
+      "medium": 24,
+      "wide": 32
+    },
+    "margin": {
+      "compact": 16,
+      "medium": 24,
+      "wide": 48
+    },
+    "breakpoint": {
+      "medium": 760,
+      "wide": 1200
+    },
+    "maxWidth": 1200
+  },
+  "easing": {
+    "standard": [
+      0.2,
+      0,
+      0,
+      1
+    ],
+    "enter": [
+      0,
+      0,
+      0.2,
+      1
+    ],
+    "exit": [
+      0.4,
+      0,
+      1,
+      1
+    ]
+  },
+  "transition": {
+    "color": {
+      "duration": "fast",
+      "easing": "standard"
+    },
+    "movement": {
+      "duration": "normal",
+      "easing": "standard"
+    },
+    "entrance": {
+      "duration": "slow",
+      "easing": "enter"
+    }
+  },
+  "accessibility": {
+    "contrastText": 4.5,
+    "contrastUI": 3,
+    "contrastHigh": 7,
+    "focusWidth": 3,
+    "focusOffset": 3,
+    "touchTarget": 48,
+    "reducedMotion": 0
   }
 };

@@ -1,6 +1,6 @@
 {
   "name": "@bokrah/design-system",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Bokrah design tokens and accessible framework-independent web styles",
   "type": "module",
   "files": [
@@ -14,7 +14,8 @@
     },
     "./styles.css": "./dist/styles.css",
     "./tokens.css": "./dist/tokens.css",
-    "./tokens.json": "./dist/tokens.json"
+    "./tokens.json": "./dist/tokens.json",
+    "./icons/*": "./dist/icons/*"
   },
   "sideEffects": [
     "**/*.css"

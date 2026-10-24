@@ -1,5 +1,7 @@
 # Bokrah design system
 
+[Complete foundations reference](foundations.md): colors, typography, spacing, borders, shadows, icons, grid, motion, themes and accessibility.
+
 ## Contents
 
 - [Direction and source](#direction-and-source)
@@ -16,7 +18,7 @@ The current app's `lib/app/config/theme.dart` uses orange #E65100 with larger ra
 
 ## Foundations
 
-`tokens/tokens.json` is the single source for semantic colors in light/dark modes, spacing, radii, type scale, layout, and motion. Run `npm run generate` after editing it; commit the generated CSS, JS/JSON and Dart. CI rejects drift.
+`tokens/tokens.json` is the single source for semantic colors in light/dark/high-contrast modes, spacing, radii, type scale, layout, and motion. Run `npm run generate` after editing it; commit the generated CSS, JS/JSON and Dart. CI rejects drift.
 
 Semantic names describe purpose: primary/onPrimary, text/muted, background/surface/surfaceAlt, border/controlBorder, focus, and success/warning/danger/info. Never use color alone for status. Chart decoration may use sage, but readable text must use semantic foregrounds. Website muted copy has deliberately been darkened to meet the documented contrast checks. Subtle borders are decorative; use controlBorder to identify inputs.
 
@@ -40,12 +42,12 @@ Components own presentation; consumers own routing, API calls, authentication, m
 
 ## Arabic and accessibility
 
-Set locale and direction at the application boundary. Use directional spacing and start/end alignment. Keep numbers and identifiers readable using explicit bidirectional isolation when needed. Translate labels, helper text, errors, and accessible names together. Examples switch English/Arabic and light/dark modes.
+Set locale and direction at the application boundary. Use directional spacing and start/end alignment. Keep numbers and identifiers readable using explicit bidirectional isolation when needed. Translate labels, helper text, errors, and accessible names together. Examples switch English/Arabic and light/dark/high-contrast modes.
 
-Use visible keyboard focus, real buttons/labels, descriptive errors linked to fields, and a text label for every status. Loading actions are unavailable to duplicate submissions and announce their busy state. Web respects reduced motion. Contrast tests require 4.5:1 for body/muted and status text, and 3:1 for input boundaries and focus outlines. Automated checks are a baseline; keyboard, screen-reader, zoom, and device review are still required before consumer rollout.
+Use visible keyboard focus, real buttons/labels, descriptive errors linked to fields, and a text label for every status. Loading actions are unavailable to duplicate submissions and announce their busy state. Web respects reduced motion. Contrast tests require 4.5:1 for body/muted and status text in normal themes, 7:1 in high contrast, and 3:1 for input boundaries and focus outlines. Automated checks are a baseline; keyboard, screen-reader, zoom, and device review are still required before consumer rollout.
 
 ## Versioning and rollout
 
-Both packages start at 0.1.0. This is a repository distribution, not a pub.dev or npm registry publication. Use Git/path dependencies until a registry release is explicitly requested. No existing Bokrah production screen has been migrated by this change.
+Both packages start at 0.2.0. This is a repository distribution, not a pub.dev or npm registry publication. Use Git/path dependencies until a registry release is explicitly requested. No existing Bokrah production screen has been migrated by this change.
 
-Change tokens first, regenerate, update both examples, run web and Flutter checks, and record changes in CHANGELOG. Changes to component API or semantic meaning require a migration note. Start migration with one isolated page, review Arabic/English and light/dark behavior, then expand.
+Change tokens first, regenerate, update both examples, run web and Flutter checks, and record changes in CHANGELOG. Changes to component API or semantic meaning require a migration note. Start migration with one isolated page, review Arabic/English and light/dark/high-contrast behavior, then expand.
