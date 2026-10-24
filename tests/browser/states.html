@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Bokrah disclosure state regression</title><body>
+<h1>Disclosure state regression</h1><button id="run" type="button">Run disclosure state checks</button><p id="result" role="status">Ready</p><div id="fixture"></div>
+<script type="module">
+import {bindBokrahMenu,bindBokrahPopover,bindBokrahModal} from '../../packages/web/dist/index.js';
+const fixture=document.querySelector('#fixture'),result=document.querySelector('#result');
+const assert=(ok,message)=>{if(!ok)throw Error(message)};
+document.querySelector('#run').addEventListener('click',()=>{
+ let checks=0;
+ try {
+ for(const kind of ['menu','popover','modal'])for(const mode of ['disabled','aria-disabled']){
+  const trigger=document.createElement('button');trigger.textContent='Sample '+kind;
+  const surface=document.createElement(kind==='modal'?'dialog':'div');surface.id='test-'+kind+'-'+mode;surface.textContent='Sample details';
+  if(kind==='menu'){const item=document.createElement('button');item.setAttribute('role','menuitem');item.textContent='Sample item';surface.append(item)}
+  fixture.append(trigger,surface);
+  let controller,cleanup;
+  if(kind==='menu'){controller=bindBokrahMenu(trigger,surface);cleanup=()=>controller.destroy()}
+  if(kind==='popover'){controller=bindBokrahPopover(trigger,surface);cleanup=()=>controller.destroy()}
+  if(kind==='modal')cleanup=bindBokrahModal(trigger,surface);
+  try {
+   if(mode==='disabled')trigger.disabled=true;else trigger.setAttribute('aria-disabled','true');
+   trigger.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+   controller?.open();
+   if(kind==='menu')controller.openAt(20,20);
+   assert(kind==='modal'?!surface.open:trigger.getAttribute('aria-expanded')==='false',kind+' opened while '+mode);checks++;
+   trigger.disabled=false;trigger.removeAttribute('aria-disabled');trigger.click();
+   assert(kind==='modal'?surface.open:trigger.getAttribute('aria-expanded')==='true',kind+' did not open when enabled');checks++;
+   if(kind==='modal')surface.close();else controller.close();
+  } finally {cleanup();trigger.remove();surface.remove()}
+ }
+ result.textContent='Passed '+checks+' disclosure state checks.';
+ } catch(error){result.textContent='FAILED: '+error.message;throw error}
+});
+</script></body></html>

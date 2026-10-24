@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0
+
+- Define all ten component states with bilingual web and Flutter examples and a component applicability matrix.
+- Add read-only and success feedback to BkTextField; errors take precedence over success.
+- Align web interaction styling and prevent disabled menu, popover and modal triggers from opening.
+- Add regression coverage for read-only focus/selection and validation feedback priority.
+
 ## 0.6.0
 
 - Add all ten layout groups to web and Flutter catalogues with English/Arabic examples.

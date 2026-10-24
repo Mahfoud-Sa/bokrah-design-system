@@ -144,6 +144,8 @@ class BkTextField extends StatelessWidget {
     this.controller,
     this.helperText,
     this.errorText,
+    this.successText,
+    this.readOnly = false,
     this.onChanged,
     this.enabled = true,
     this.keyboardType,
@@ -152,6 +154,8 @@ class BkTextField extends StatelessWidget {
   final TextEditingController? controller;
   final String? helperText;
   final String? errorText;
+  final String? successText;
+  final bool readOnly;
   final ValueChanged<String>? onChanged;
   final bool enabled;
   final TextInputType? keyboardType;
@@ -159,11 +163,21 @@ class BkTextField extends StatelessWidget {
   Widget build(BuildContext context) => TextField(
     controller: controller,
     enabled: enabled,
+    readOnly: readOnly,
     keyboardType: keyboardType,
     onChanged: onChanged,
     decoration: InputDecoration(
       labelText: label,
-      helperText: helperText,
+      helperText: errorText == null ? successText ?? helperText : helperText,
+      helperStyle: errorText == null && successText != null
+          ? TextStyle(color: BkThemeTokens.of(context)['success'])
+          : null,
+      suffixIcon: errorText == null && successText != null
+          ? Icon(
+              Icons.check_circle_outline,
+              color: BkThemeTokens.of(context)['success'],
+            )
+          : null,
       errorText: errorText,
     ),
   );

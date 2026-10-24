@@ -1,3 +1,4 @@
+import { isUnavailable } from './interaction.js';
 function positionSurface(trigger,surface){const rect=trigger.getBoundingClientRect(),box=surface.getBoundingClientRect(),doc=trigger.ownerDocument;const rtl=getComputedStyle(trigger).direction==='rtl';surface.style.left=Math.max(8,Math.min(rtl?rect.right-box.width:rect.left,doc.documentElement.clientWidth-box.width-8))+'px';const top=rect.bottom+8+box.height<=doc.documentElement.clientHeight?rect.bottom+8:rect.top-box.height-8;surface.style.top=Math.max(8,top)+'px'}
 /** Noninteractive, hoverable tooltip. Preserve existing accessible descriptions. */
 export function bindBokrahTooltip(trigger,tooltip){
@@ -18,8 +19,8 @@ export function bindBokrahPopover(trigger,popover){
  popover.setAttribute('role','dialog');popover.setAttribute('popover','auto');if(!native)popover.hidden=true;
  trigger.setAttribute('aria-haspopup','dialog');trigger.setAttribute('aria-expanded','false');if(popover.id)trigger.setAttribute('aria-controls',popover.id);
  function close(restore=true){if(!isOpen)return;isOpen=false;if(native){if(popover.matches(':popover-open'))popover.hidePopover()}else popover.hidden=true;trigger.setAttribute('aria-expanded','false');if(restore&&trigger.isConnected)trigger.focus()}
- function open(){isOpen=true;if(native)popover.showPopover();else popover.hidden=false;trigger.setAttribute('aria-expanded','true');positionSurface(trigger,popover);popover.querySelector('button,a[href],input,[tabindex="0"]')?.focus()}
- const click=()=>isOpen?close():open();
+ function open(){if(isUnavailable(trigger))return;isOpen=true;if(native)popover.showPopover();else popover.hidden=false;trigger.setAttribute('aria-expanded','true');positionSurface(trigger,popover);popover.querySelector('button,a[href],input,[tabindex="0"]')?.focus()}
+ const click=()=>{if(!isUnavailable(trigger))isOpen?close():open()};
  const dismiss=event=>{if(event.target.closest('[data-bk-close]'))close()};
  const key=event=>{if(isOpen&&event.key==='Escape'){event.preventDefault();close()}};
  const outside=event=>{if(!native&&isOpen&&!popover.contains(event.target)&&!trigger.contains(event.target))close(false)};

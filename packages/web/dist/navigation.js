@@ -1,3 +1,4 @@
+import { isUnavailable } from './interaction.js';
 /** Enhance a tab group containing a tablist, tab buttons and associated panels. */
 export function bindBokrahTabs(root, {onChange} = {}) {
   const list=root.querySelector('[role="tablist"]');
@@ -26,10 +27,10 @@ export function bindBokrahMenu(trigger,menu,{onSelect}={}) {
   let returnFocus=trigger;
   const items=()=>[...menu.querySelectorAll('[role="menuitem"]')].filter(item=>!item.disabled);
   function close(restore=true){menu.hidden=true;trigger.setAttribute('aria-expanded','false');if(restore&&returnFocus.isConnected)returnFocus.focus()}
-  function openAt(x,y,focusTarget=trigger){returnFocus=focusTarget;menu.hidden=false;trigger.setAttribute('aria-expanded','true');menu.style.position='fixed';const rect=menu.getBoundingClientRect();menu.style.left=Math.max(8,Math.min(x,doc.documentElement.clientWidth-rect.width-8))+'px';menu.style.top=Math.max(8,Math.min(y,doc.documentElement.clientHeight-rect.height-8))+'px';items()[0]?.focus()}
-  function open(){menu.hidden=false;menu.style.position='fixed';const rect=trigger.getBoundingClientRect();const rtl=getComputedStyle(trigger).direction==='rtl';openAt(rtl?rect.right-menu.getBoundingClientRect().width:rect.left,rect.bottom+4)}
-  const triggerClick=()=>{if(menu.hidden)open();else close()};
-  const triggerKey=event=>{if(['ArrowDown','ArrowUp'].includes(event.key)){event.preventDefault();open();if(event.key==='ArrowUp')items().at(-1)?.focus()}};
+  function openAt(x,y,focusTarget=trigger){if(isUnavailable(trigger))return;returnFocus=focusTarget;menu.hidden=false;trigger.setAttribute('aria-expanded','true');menu.style.position='fixed';const rect=menu.getBoundingClientRect();menu.style.left=Math.max(8,Math.min(x,doc.documentElement.clientWidth-rect.width-8))+'px';menu.style.top=Math.max(8,Math.min(y,doc.documentElement.clientHeight-rect.height-8))+'px';items()[0]?.focus()}
+  function open(){if(isUnavailable(trigger))return;menu.hidden=false;menu.style.position='fixed';const rect=trigger.getBoundingClientRect();const rtl=getComputedStyle(trigger).direction==='rtl';openAt(rtl?rect.right-menu.getBoundingClientRect().width:rect.left,rect.bottom+4)}
+  const triggerClick=()=>{if(isUnavailable(trigger))return;if(menu.hidden)open();else close()};
+  const triggerKey=event=>{if(isUnavailable(trigger))return;if(['ArrowDown','ArrowUp'].includes(event.key)){event.preventDefault();open();if(event.key==='ArrowUp')items().at(-1)?.focus()}};
   const menuClick=event=>{const item=event.target.closest('[role="menuitem"]');if(!items().includes(item))return;if(item.getAttribute('aria-disabled')==='true'){event.preventDefault();return}close();onSelect?.(item.dataset.value??'',item)};
   const menuKey=event=>{const all=items();let index=all.indexOf(doc.activeElement);if(event.key==='Escape'){event.preventDefault();close();return}if(event.key==='Tab'){close();return}
     if(event.key==='Home')index=0;else if(event.key==='End')index=all.length-1;else if(event.key==='ArrowDown')index=(index+1)%all.length;else if(event.key==='ArrowUp')index=(index-1+all.length)%all.length;else if(event.key.length===1&&!event.ctrlKey&&!event.metaKey&&!event.altKey){const match=[...all.slice(index+1),...all.slice(0,index+1)].find(item=>item.textContent.trim().toLocaleLowerCase().startsWith(event.key.toLocaleLowerCase()));if(match){event.preventDefault();match.focus()}return}else return;
