@@ -119,3 +119,25 @@
 .bk-kpi{display:flex;flex-direction:column;align-items:flex-start;gap:var(--bk-space-md)}.bk-kpi__value{font-family:'Bokrah Heading',sans-serif;font-size:32px;font-weight:800;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.bk-no-results{text-align:center;padding:var(--bk-space-xl)}
 @media(max-width:500px){.bk-bars li{grid-template-columns:1fr auto}.bk-bar-track{grid-column:1/-1;grid-row:2}}
 .bk-image[hidden],.bk-image-error[hidden]{display:none}
+
+/* Layout: bk-stack retains its existing vertical-flow meaning. */
+.bk-container{max-inline-size:calc(1200px + 2 * var(--bk-grid-margin-wide))}
+.bk-column{display:flex;flex-direction:column;gap:var(--bk-space-lg);min-inline-size:0}
+.bk-divider{border:0;border-block-start:1px solid var(--bk-border);margin-block:var(--bk-space-xl);inline-size:100%}
+.bk-spacer{display:block;block-size:var(--bk-gap,var(--bk-space-lg));flex-shrink:0}
+.bk-spacer--inline{display:inline-block;inline-size:var(--bk-gap,var(--bk-space-lg));block-size:1px}
+.bk-overlay-stack{display:grid;min-inline-size:0;isolation:isolate}
+.bk-overlay-stack>*{grid-area:1/1;min-inline-size:0}
+.bk-overlay-stack__badge{align-self:start;justify-self:end;margin:var(--bk-space-sm);z-index:1}
+.bk-modal{background:var(--bk-surface);color:var(--bk-text);border:1px solid var(--bk-control-border);border-radius:var(--bk-radius-xl);padding:var(--bk-space-xl);inline-size:min(560px,calc(100% - 32px));max-block-size:85dvh;overflow:auto}
+.bk-modal::backdrop{background:rgb(0 0 0 / .55)}
+.bk-modal--sheet{margin:auto auto 0;inline-size:min(720px,100%);border-end-start-radius:0;border-end-end-radius:0}
+.bk-responsive-layout{container-type:inline-size;min-inline-size:0}
+.bk-responsive-layout__body{display:grid;gap:var(--bk-space-xl)}
+.bk-responsive-layout__body>*{min-inline-size:0}
+.bk-page-scaffold{min-block-size:100dvh;display:grid;grid-template-rows:auto 1fr auto;background:var(--bk-background);padding-block-end:env(safe-area-inset-bottom)}
+.bk-page-scaffold>main{min-inline-size:0}
+.bk-section-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--bk-space-lg)}
+.bk-section-header>div{min-inline-size:0;flex:1 1 14rem}
+.bk-section-header :is(h2,h3,p){margin-block:0}
+@container(min-width:760px){.bk-responsive-layout__body{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}}

@@ -73,3 +73,5 @@ Pin a reviewed commit or release tag for production. Import `package:bokrah_desi
 Edit JSON tokens and run `npm run generate`. CI checks generated drift, contrast, helper behavior, Flutter analysis and widget tests, and builds the example for web. On pushes to main, the included GitHub Actions workflow deploys both catalogues to GitHub Pages after every check passes. Registry publishing is deliberately manual.
 
 Read [the design guide](docs/design-system.md) and [the component usage guide](docs/components.md). Fonts retain their SIL licenses in both packages. Project code has no open-source license grant until the owner chooses one; do not infer an MIT license from repository visibility.
+
+[Layout components: web and Flutter](docs/layout.md)

@@ -44,3 +44,5 @@ The library is opt-in via `.bk-root`, but `@font-face` declarations and generate
 ## Web package distribution
 
 The CSS package includes type declarations for the optional JS helpers and keeps native HTML semantics. Install the directory from a local clone, or pack it with npm. Both approaches include fonts and tokens. The package name is reserved in this source tree only; a registry name is not claimed by this repository.
+
+[5. Layout Components: all ten groups](layout.md)

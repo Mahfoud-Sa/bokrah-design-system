@@ -14,3 +14,5 @@ export function setBokrahLanguage(language, root = document.documentElement) {
 export { foundations, icons } from './foundations.js';
 export { bindBokrahTabs, bindBokrahMenu } from './navigation.js';
 export { bindBokrahTooltip, bindBokrahPopover } from './data-display.js';
+
+export { bindBokrahModal } from './layout.js';

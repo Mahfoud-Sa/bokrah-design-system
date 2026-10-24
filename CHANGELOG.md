@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0
+
+- Add all ten layout groups to web and Flutter catalogues with English/Arabic examples.
+- Provide containers, flow, grid, dividers, spacers, overlays, modal/sheet helpers, responsive layouts, page scaffolds and section headers.
+- Document responsive constraints, scrolling, focus, RTL and compatibility; test narrow layouts and modal routes.
+
 ## 0.5.0
 
 - Add ten data-display groups with bilingual web and Flutter examples.
