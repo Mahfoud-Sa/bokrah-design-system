@@ -68,7 +68,7 @@ outputs.set('docs/component-reference.md',index);
 outputs.set('examples/web/component-reference.js','// Generated component reference; do not edit.\nexport const referenceSections = '+JSON.stringify(sections)+';\nexport const componentReference = '+JSON.stringify(reference,null,2)+';\n');
 let dart="// Generated documentation snippets; edit docs/reference-catalog.mjs.\nimport 'package:flutter/material.dart';\nimport 'package:bokrah_design_system/bokrah_design_system.dart';\n\n";
 for(const entry of reference){const name='doc'+entry.symbol.replaceAll(/[^a-zA-Z0-9]/g,'');dart+=(entry.examples.kind==='statement'?`void ${name}(BuildContext context) {\n  ${entry.examples.flutter}\n}\n\n`:`Widget ${name}(BuildContext context) => ${entry.examples.flutter};\n\n`);}
-outputs.set('packages/flutter/test/documentation_examples.dart',dart);
+outputs.set('packages/flutter/test/documentation_examples.dart',dart.trimEnd()+'\n');
 let stale=false;
 for(const [file,content]of outputs){if(check){if(!fs.existsSync(file)||fs.readFileSync(file,'utf8').replaceAll('\r\n','\n')!==content){console.error('Documentation drift: '+file);stale=true}}else{fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,content)}}
 if(stale)process.exitCode=1;else console.log(`${check?'Checked':'Generated'} ${reference.length} component references and Flutter snippets.`);

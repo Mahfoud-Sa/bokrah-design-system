@@ -101,4 +101,3 @@ Widget docBkSectionHeader(BuildContext context) => BkSectionHeader(title: 'Month
 Widget docshowBkModal(BuildContext context) => Builder(builder: (context) => BkButton(label: 'Review', onPressed: () { showBkModal<void>(context: context, title: 'Review sample', closeLabel: 'Close review', builder: (dialogContext) => const Text('Sample details')); }));
 
 Widget docshowBkBottomSheet(BuildContext context) => Builder(builder: (context) => BkButton(label: 'Review', onPressed: () { showBkBottomSheet<void>(context: context, title: 'Review sample', closeLabel: 'Close review', builder: (sheetContext) => const Text('Sample details')); }));
-
